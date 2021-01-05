@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un partenaire</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <label for="nom">Nom :</label> <br>
+            <input type="text" name="nom" required> <br>
+            <label for="responsable">Nom et Prénom du responsable :</label> <br>
+            <input type="text" name="responsable" required> <br>
+            <label for="mail_contact">Email du contact :</label> <br>
+            <input type="text" name="mail_contact" required> <br>
+            <label for="statut">Statut juridique :</label> <br>
+            <input type="text" name="statut" required> <br>
+            <label for="contact">Nom du contact :</label> <br>
+            <input type="text" name="contact" required> <br>
+            <label for="tel">Téléphone du contact :</label> <br>
+            <input type="tel" name="tel" pattern="{0,9}" required>
+        </fieldset>
+        <button type="submit" name="ajouter">Ajouter</button>
+    </form>
+</body>
+
+</html>
