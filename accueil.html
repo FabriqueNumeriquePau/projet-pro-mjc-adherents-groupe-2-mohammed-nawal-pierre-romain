@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <title>Accueil</title>
+</head>
+
+<body>
+    
+        <div class="container">
+            <div class="frame">
+              <div class="nav">
+                <ul class"links">
+                  <li class="signin-active"><a class="btn">Identification</a></li>
+                </ul>
+              </div>
+              <div ng-app ng-init="checked = false">
+                          <form class="form-signin" action="" method="post" name="form">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input class="form-styling" type="text" name="username" placeholder=""/>
+                    <label for="password">Mot de passe</label>
+                    <input class="form-styling" type="text" name="password" placeholder=""/>
+                    <input type="checkbox" id="checkbox"/>
+                    <label for="checkbox" ><span class="ui"></span>Rester connecter</label>
+                    <div class="btn-animate">
+                      <a href="index.html" class="btn-signin">S'identifier</a>
+                    </div>
+                          </form>
+                                                      
+                
+                <div class="forgot">
+                  <a href="#">Mot de passe oublié</a>
+                </div>
+              </div>
+            </div>
+                
+          </div>
+              
+         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="./js/accueil.js"></script>    
+</body>
+
+</html>
