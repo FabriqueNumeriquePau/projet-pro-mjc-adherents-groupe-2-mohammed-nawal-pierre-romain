@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <h1>Newsletter</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Créer une liste de destinataires :</legend>
+            <p><label for="activite">Par activité :</label></p>
+            <select name="activite" id="activite" required>
+                <option value="">--Please choose an option--</option>
+            </select>
+
+            <p><label for="evenement">Par évènement :</label></p>
+            <select name="evenement" id="evenement" required>
+                <option value="">--Please choose an option--</option>
+            </select>
+
+            <p><label for="age">Par tranche d'âge :</label></p>
+            <select name="age" id="age" required>
+                <option value="">--Please choose an option--</option>
+            </select>
+
+            <p><label for="import">Importer une liste :</label></p>
+            <input type="file" name="import" id="import" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Information sur l'expéditeur :</legend>
+            <p><label for="nom">Nom de l'expediteur :</label></p>
+            <select name="nom" id="nom" required>
+                <option value="">--Please choose an option--</option>
+            </select>
+
+            <p><label for="email">Email de l'expéditeur :</label></p>
+            <select name="email" id="email">
+                <option value="">--Please choose an option--</option>
+            </select>
+
+            <p><label for="objet">Object :</label></p>
+            <select name="objet" id="objet">
+                <option value="">--Please choose an option--</option>
+            </select>
+        </fieldset>
+        <div class="container">
+            <div class="wysiwyg">
+                <div class="panel-boutons">
+                    <div class="bouton-groupe">
+                        <button type="button" id="bold"><i class="fa fa-bold"></i></button>
+                        <button type="button" id="italic"><i class="fa fa-italic"></i></button>
+                        <button type="button" id="underline"><i class="fa fa-underline"></i></button>
+                        <button type="button" id="strikethrough"><i class="fa fa-strikethrough"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="justifyleft"><i class="fa fa-align-left"></i></button>
+                        <button type="button" id="justifycenter"><i class="fa fa-align-center"></i></button>
+                        <button type="button" id="justifyright"><i class="fa fa-align-right"></i></button>
+                        <button type="button" id="justifyfull"><i class="fa fa-align-justify"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="insertunorderedlist"><i class="fa fa-list-ul"></i></button>
+                        <button type="button" id="insertorderedlist"><i class="fa fa-list-ol"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="indent"><i class="fa fa-indent"></i></button>
+                        <button type="button" id="outdent"><i class="fa fa-outdent"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="undo"><i class="fa fa-undo"></i></button>
+                        <button type="button" id="redo"><i class="fa fa-undo"></i></button>
+                        <button type="button" id="delete"><i class="fa fa-eraser"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="createLink"><i class="fa fa-link"></i></button>
+                        <button type="button" id="insertImage"><i class="fa fa-picture-o"></i></button>
+                    </div>
+                    <div class="bouton-groupe">
+                        <button type="button" id="forecolor"><i class="fa fa-tint"></i></button>
+                    </div>
+                </div>
+                <div class="editeur" contentEditable></div>
+                <div class="htmlview"></div>
+            </div>
+        </div>
+        </div>
+
+        <input type="submit" value="ENVOYER" />
+        <input type="submit" value="HISTORIQUE" />
+    </form>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/newsletter.js"></script>
+</body>
+
+</html>

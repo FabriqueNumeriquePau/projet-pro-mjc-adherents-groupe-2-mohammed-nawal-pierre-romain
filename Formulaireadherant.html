@@ -1,102 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire Adhérant</title>
 </head>
+
 <body>
     <header></header>
     <nav></nav>
     <section>
         <h1>Création d'un compte adhérant :</h1>
         <form action="#">
-            <p>
-                <label for="name">Nom :</label>
-                <input type="text" name="name" id="name" autocapitalize="words" required>
-            </p>
-            <p>
-                <label for="prenom">Prénom :</label>
-                <input type="text" name="prenom" id="prenom" autocapitalize="words" required>
-            </p>
-            <p>
-                <label for="identifiant">identifiant</label>
-                <input type="text" name="identifiant" id="identifiant" required>
-            </p>
-            <p>
-                <label for="securite">Sécurité :</label>
-                <select name="securite" id="securite" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="general">Général</option>
-                </select>
-            </p>
-            <p>
-                <label for="datenaissance">Date de Naissance</label>
-                <input type="date" name="datenaissance" id="datenaissance" required>
-            </p>
-            <p>
-                <label for="adresse">Adresse :</label>
-                <input type="text" name"adresse" id="adresse" placeholder=" Ex : 1 allée des Hirondelles, 61000 Lons" required>
-            </p>
-            <p>
-                <label for="telephone">Téléphone :</label>
-                <input type="tel" name="telephone" id="telephone" placeholder="Ex : 07XXXXXX76" pattern="[0-9]{10}" required>
-            </p>
-            <p>
-                <label for="email">Email :</label>
-                <input type="email" name="email" id="email" required>
-            </p>
+            <p><label for="name">Nom :</label></p>
+            <input type="text" name="name" id="name" autocapitalize="words" required>
+            <p><label for="prenom">Prénom :</label></p>
+            <input type="text" name="prenom" id="prenom" autocapitalize="words" required>
+
+            <p><label for="identifiant">identifiant</label></p>
+            <input type="text" name="identifiant" id="identifiant" required>
+
+            <p><label for="securite">Sécurité :</label></p>
+            <select name="securite" id="securite" required>
+                <option value="">--Please choose an option--</option>
+                <option value="general">Général</option>
+            </select>
+
+            <p><label for="datenaissance">Date de Naissance</label></p>
+            <input type="date" name="datenaissance" id="datenaissance" required>
+
+            <p><label for="adresse">Adresse :</label></p>
+            <input type="text" name"adresse" id="adresse" placeholder=" Ex : 1 allée des Hirondelles, 61000 Lons"
+                required>
+
+            <p><label for="telephone">Téléphone :</label></p>
+            <input type="tel" name="telephone" id="telephone" placeholder="Ex : 07XXXXXX76" pattern="[0-9]{10}"
+                required>
+
+            <p><label for="email">Email :</label></p>
+            <input type="email" name="email" id="email" required>
+
             <p>
                 <label for="activite">Activité :</label>
-                <select name="activite" id="activite" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="dance">Dance</option>
-                </select>
             </p>
-            <p>
-                <label for="profession">Professsion :</label>
-                <select name="profession" id="profession" required>
-                    <option value="">--Please choose an option--</option>
-                    <optgroup label="Informaticien">
-                        <option value="developpeur">Développeur</option>
-                    </optgroup>
-                </select>
-            </p>
-            <p>
-                <label for="caf">Numéro d'allocation CAF</label>
-                <input type="text" name="caf" id="caf" pattern="[0-9]{7}" required>
-            </p>
-            <p>
-                <label for="compte">Type de compte :</label>
-                <select name="compte" id="compte" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="enfant">Enfant</option>
-                    <option value="adulte">Adulte</option>
-                </select>
-            </p>
-            <p>
-                <label for="paiement">Statut de paiement :</label>
-                <select name="paiement" id="paiement" required>
-                    <option value="">--Please choose an option--</option>
-                    <option value="enfant">Payé</option>
-                    <option value="adulte">En attente</option>
-                </select>
-            </p>
-            <p>
-                <label for="">Compte lié :</label>
-                <input type="text" name="" required>
-            </p>
-            <p>
-                <label for="quartier">Quartier :</label>
-                <select name="quartier" id="quartier" required>
-                    <option value=""></option>
-                </select>
-            </p>
-            <p>
-                <input type="submit" value="Ajouter">
-            </p>
+            <select name="activite" id="activite" required>
+                <option value="">--Please choose an option--</option>
+                <option value="dance">Dance</option>
+            </select>
+
+            <p><label for="profession">Professsion :</label></p>
+            <select name="profession" id="profession" required>
+                <option value="">--Please choose an option--</option>
+                <optgroup label="Informaticien">
+                    <option value="developpeur">Développeur</option>
+                </optgroup>
+            </select>
+
+            <p><label for="caf">Numéro d'allocation CAF</label></p>
+            <input type="text" name="caf" id="caf" pattern="[0-9]{7}" required>
+
+            <p><label for="compte">Type de compte :</label></p>
+            <select name="compte" id="compte" required>
+                <option value="">--Please choose an option--</option>
+                <option value="enfant">Enfant</option>
+                <option value="adulte">Adulte</option>
+            </select>
+
+            <p><label for="paiement">Statut de paiement :</label></p>
+            <select name="paiement" id="paiement" required>
+                <option value="">--Please choose an option--</option>
+                <option value="enfant">Payé</option>
+                <option value="adulte">En attente</option>
+            </select>
+
+            <p><label for="">Compte lié :</label></p>
+            <input type="text" name="" required>
+
+            <p><label for="quartier">Quartier :</label></p>
+            <select name="quartier" id="quartier" required>
+                <option value=""></option>
+            </select>
+
+            <input type="submit" value="Ajouter">
         </form>
     </section>
     <footer></footer>
 </body>
+
 </html>
