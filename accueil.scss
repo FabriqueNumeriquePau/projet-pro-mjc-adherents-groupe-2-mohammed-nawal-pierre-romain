@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+
+
+
+}
+
+$primary-color : #2B3D50;
+
+header {
+    background: $primary-color;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        margin-left: 1em;
+        width: 7em;
+    }
+
+    .search {
+        margin-right: 2em;
+        align-self: center;
+
+        input {
+            border-radius: 2em;
+            width: 30em;
+
+            &::placeholder {
+                color: rgb(148, 145, 145);
+                font-size: 15px;
+            }
+
+            &:placeholder-shown {
+                border-style: none;
+                outline-style: unset;
+
+            }
+        }
+
+        button {
+            background-color: darkcyan;
+            border-radius: 1em;
+            font-size: 1em;
+            color: white;
+            border-style: none;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+nav {
+    position: fixed;
+    background: rgb(131, 120, 120);
+    width: 8vw;
+    height: 100vh;
+    background-color: $primary-color;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4em;
+        align-items: center;
+
+
+        li {
+            font-size: 3.5em;
+            margin-bottom: .8rem;
+
+            a {
+                color: white;
+                transition-duration: 0.4s;
+                cursor: pointer;
+
+                &:hover {
+                    color: cadetblue;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+main {
+    background: rgba(0, 0, 0, 0.014);
+    width: 92vw;
+    height: 80vh;
+    margin-left: 8vw;
+    
+    #stats{
+        height: 40vh;
+    }
+    #buttons {
+        vertical-align: bottom;
+        display: flex;        
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        height: 40vh;
+        width: 90vw;
+
+
+
+
+
+        .button {
+
+            border: none;
+            border-radius: 5%;
+            height: 5em;
+            width: 20em;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+
+        }
+
+        .button1 {
+            background-color: white;
+            color: #009BFF;
+            border: 2px solid #009BFF;
+
+            &:hover {
+                background-color: #009bff;
+                color: white;
+            }
+        }
+
+
+        .button2 {
+            background-color: white;
+            color: #E180C6;
+            border: 2px solid #E180C6;
+
+            &:hover {
+                background-color: #E180C6;
+                color: white;
+            }
+        }
+
+        .button3 {
+            background-color: white;
+            color: #FF8A00;
+            border: 2px solid #FF8A00;
+
+            &:hover {
+                background-color: #FF8A00;
+                color: white;
+            }
+        }
+
+        .button4 {
+            background-color: white;
+            color: #E44747;
+            border: 2px solid #E44747;
+
+            &:hover {
+                background-color: #E44747;
+                color: white;
+            }
+        }
+
+        .button5 {
+            background-color: white;
+            color: #543EDD;
+            border: 2px solid #543EDD;
+
+            &:hover {
+                background-color: #543EDD;
+                color: white;
+            }
+        }
+
+        .button6 {
+            background-color: white;
+            color: #047501;
+            border: 2px solid #047501;
+
+            &:hover {
+                background-color: #047501;
+                color: white;
+            }
+        }
+
+        .button7 {
+            background-color: white;
+            color: #D9A902;
+            border: 2px solid #D9A902;
+
+            &:hover {
+                background-color: #D9A902;
+                color: white;
+            }
+        }
+
+        .button8 {
+            background-color: white;
+            color: #000000;
+            border: 2px solid #000000;
+
+            &:hover {
+                background-color: #000000;
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 6.6vh;
+    background: #000;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+
+    i {
+        align-self: center;
+    }
+}
