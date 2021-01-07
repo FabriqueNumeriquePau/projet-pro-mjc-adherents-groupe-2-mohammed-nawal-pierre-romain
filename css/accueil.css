@@ -1,180 +1,226 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  background-color: #15202B;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  background: #15202B;
 }
 
 header {
-  background: #2B3D50;
-  height: 5em;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  background-color: #2B3D50;
 }
 header img {
-  margin-left: 1em;
-  width: 7em;
+  width: 8vw;
 }
 header .search {
-  margin-right: 2em;
   align-self: center;
 }
 header .search input {
-  border-radius: 2em;
-  width: 30em;
+  border-radius: 1em 0 0 1em;
+  width: 31em;
+  height: 2.5em;
+  margin-left: 5em;
+  align-self: center;
+  outline-style: none;
+}
+header .search input:focus {
+  color: yell;
 }
 header .search input::placeholder {
   color: #949191;
-  font-size: 15px;
+  font-size: 18px;
 }
-header .search input:placeholder-shown {
-  border-style: none;
-  outline-style: unset;
+header .search .submit {
+  margin: 1px 0 0 -6px;
+  align-self: center;
+  width: 4em;
+  height: 1.79em;
+  border-bottom: 3px solid white;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+  outline-style: none;
+  font-size: 20px;
 }
-header .search button {
-  background-color: darkcyan;
-  border-radius: 1em;
-  font-size: 1em;
-  color: white;
-  border-style: none;
+header .search .submit:active {
+  border-bottom: 1px solid white;
+}
+header .profil {
+  background-color: white;
+  height: 8vh;
+  width: 3.5vw;
+  border-radius: 50%;
+  margin-left: 35%;
+}
+header .sign_out {
+  width: 3vw;
+  outline-style: none;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: #30a59f;
   cursor: pointer;
 }
-
-nav {
-  position: fixed;
-  background: #837878;
-  width: 8vw;
-  height: 100vh;
-  background-color: #2B3D50;
+header .sign_out:active {
+  border-bottom: 1px solid white;
 }
-nav ul {
+header .sign_out i {
+  font-size: 24px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+main nav {
+  background-color: #2B3D50;
+  width: 8vw;
+  height: 90vh;
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-top: 4em;
+  justify-content: center;
   align-items: center;
 }
-nav ul li {
-  font-size: 3.5em;
+main nav li {
   margin-bottom: 0.8rem;
+  font-size: 5vh;
+  font-size: 3vw;
 }
-nav ul li a {
+main nav li a {
   color: white;
   transition-duration: 0.4s;
   cursor: pointer;
 }
-nav ul li a:hover {
+main nav li a:hover {
   color: cadetblue;
 }
-
-main {
-  background: rgba(0, 0, 0, 0.014);
-  width: 92vw;
-  height: 80vh;
-  margin-left: 9vw;
+main section {
+  display: flex;
+  flex-direction: column;
 }
-main #stats {
+main section #stats {
   height: 40vh;
+  width: 100vw;
 }
-main #buttons {
+main section #buttons {
   vertical-align: bottom;
   margin-left: 9vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   height: 40vh;
   width: 70vw;
 }
-main #buttons .button {
+main section #buttons button {
+  padding-left: 1em;
+  text-transform: uppercase;
   border: none;
   border-radius: 5%;
   height: 5em;
   width: 18em;
+  vertical-align: top;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
-main #buttons .button1 {
-  background-color: white;
+main section #buttons button:hover {
+  transform: scale(1.2);
+}
+main section #buttons button i {
+  font-size: 70px;
+}
+main section #buttons .button1 {
+  background-color: #15202B;
   color: #009BFF;
   border: 2px solid #009BFF;
 }
-main #buttons .button1:hover {
+main section #buttons .button1:hover {
   background-color: #009bff;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button2 {
-  background-color: white;
+main section #buttons .button2 {
+  background-color: #15202B;
   color: #E180C6;
   border: 2px solid #E180C6;
 }
-main #buttons .button2:hover {
+main section #buttons .button2:hover {
   background-color: #E180C6;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button3 {
-  background-color: white;
+main section #buttons .button3 {
+  background-color: #15202B;
   color: #FF8A00;
   border: 2px solid #FF8A00;
 }
-main #buttons .button3:hover {
+main section #buttons .button3:hover {
   background-color: #FF8A00;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button4 {
-  background-color: white;
+main section #buttons .button4 {
+  background-color: #15202B;
   color: #E44747;
   border: 2px solid #E44747;
 }
-main #buttons .button4:hover {
+main section #buttons .button4:hover {
   background-color: #E44747;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button5 {
-  background-color: white;
+main section #buttons .button5 {
+  background-color: #15202B;
   color: #543EDD;
   border: 2px solid #543EDD;
 }
-main #buttons .button5:hover {
+main section #buttons .button5:hover {
   background-color: #543EDD;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button6 {
-  background-color: white;
+main section #buttons .button6 {
+  background-color: #15202B;
   color: #047501;
   border: 2px solid #047501;
 }
-main #buttons .button6:hover {
+main section #buttons .button6:hover {
   background-color: #047501;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button7 {
-  background-color: white;
+main section #buttons .button7 {
+  background-color: #15202B;
   color: #D9A902;
   border: 2px solid #D9A902;
 }
-main #buttons .button7:hover {
+main section #buttons .button7:hover {
   background-color: #D9A902;
-  color: white;
+  color: #15202B;
 }
-main #buttons .button8 {
-  background-color: white;
-  color: #000000;
-  border: 2px solid #000000;
+main section #buttons .button8 {
+  background-color: #15202B;
+  color: #fff;
+  border: 2px solid #fff;
 }
-main #buttons .button8:hover {
-  background-color: #000000;
-  color: white;
+main section #buttons .button8:hover {
+  background-color: #fff;
+  color: #15202B;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 6.6vh;
   background: #000;
