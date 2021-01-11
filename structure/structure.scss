@@ -149,7 +149,7 @@ main {
 
           
             list-style: none;
-            width: 17vw;
+            width: 19vw;
             height: 10vh;
             display: flex;
             font-size: 2em;
@@ -161,12 +161,16 @@ main {
 
                 text-decoration: none;
                 margin-top: 1em;
-                width: 18vw;
+                width: 20vw;
                 height: 10vh;
                 display: flex;
                 align-items: baseline;
                 color: white;
-
+                
+               span{
+                   text-align: right;
+                   font-size: .8em;
+               }
                 i {
 
                     display: flex;

@@ -110,7 +110,7 @@ main nav:hover {
 }
 main nav li {
   list-style: none;
-  width: 17vw;
+  width: 19vw;
   height: 10vh;
   display: flex;
   font-size: 2em;
@@ -118,11 +118,15 @@ main nav li {
 main nav li a {
   text-decoration: none;
   margin-top: 1em;
-  width: 18vw;
+  width: 20vw;
   height: 10vh;
   display: flex;
   align-items: baseline;
   color: white;
+}
+main nav li a span {
+  text-align: right;
+  font-size: 0.8em;
 }
 main nav li a i {
   display: flex;
