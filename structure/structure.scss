@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #15202B;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+$primary-color : #2B3D50;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 8vh;
+    background-color: $primary-color;
+
+    img {
+        width: 6vw;
+        height: 6vh;
+    }
+
+    .search {
+        align-self: center;
+
+        input {
+            border-radius: 1em 0 0 1em;
+            width: 31em;
+            height: 2.5em;
+            margin-left: 5em;
+            align-self: center;
+            outline-style: none;
+
+            &:focus {
+                color: yell;
+
+            }
+
+            &::placeholder {
+                color: rgb(148, 145, 145);
+                font-size: 18px;
+            }
+
+
+
+        }
+
+        .submit {
+            margin: 1px 0 0 -6px;
+            align-self: center;
+            width: 4em;
+            height: 1.79em;
+            border-bottom: 3px solid white;
+            background: #00B4CC;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 1em 1em 0;
+            cursor: pointer;
+            outline-style: none;
+            font-size: 20px;
+
+            &:active {
+                border-bottom: 1px solid white;
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+    .profil {
+
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        background-image: url('/wp2515187-black-panther-animal-wallpapers.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 8vh;
+        width: 3.5vw;
+        border-radius: 50%;
+        margin-left: 35%;
+
+        p {
+            margin-top: 2em;
+            color: white;
+            font-size: 1.1em;
+            width: 5vw;
+            height: 4vh;
+            margin-top: 3em;
+            align-self: flex-end;
+
+        }
+    }
+
+
+
+    .sign_out {
+        width: 3vw;
+        outline-style: none;
+        border: none;
+        border-bottom: 3px solid white;
+        background-color: rgb(48, 165, 159);
+        cursor: pointer;
+
+        &:active {
+            border-bottom: 1px solid white;
+        }
+
+        i {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+
+    nav {
+        z-index: 4;
+        background-color: $primary-color;
+        width: 5vw;
+        height: 100vh;
+        display: block;
+        overflow: hidden;
+
+
+        &:hover {
+            width: 18vw;
+            transition: all .5s ease-in-out;
+        }
+
+        li {
+
+          
+            list-style: none;
+            width: 17vw;
+            height: 10vh;
+            display: flex;
+            font-size: 2em;
+
+
+
+
+            a {
+
+                text-decoration: none;
+                margin-top: 1em;
+                width: 18vw;
+                height: 10vh;
+                display: flex;
+                align-items: baseline;
+                color: white;
+
+                i {
+
+                    display: flex;
+                    justify-content: right;
+                    width: 5vw;
+                    margin-left: .3em;
+                    font-size: 1.8em;
+                }
+
+                .fa-home:hover {
+                    color: rgb(175, 175, 174);
+                }
+
+                .fa-users:hover {
+                    color: #009BFF;
+
+                }
+
+                .fa-handshake:hover {
+                    color: #E180C6;
+                }
+
+                .fa-running:hover {
+                    color: #FF8A00;
+                }
+
+                .fa-microphone:hover {
+                    color: #E44747;
+                }
+
+                .fa-envelope:hover {
+                    color: #543EDD;
+                }
+
+                .fa-user-plus:hover {
+                    color: #15202B;
+                }
+
+                .fa-chart-area:hover {
+                    color: #D9A902;
+                }
+
+                .fa-file-excel:hover {
+                    color: #047501;
+                }
+
+
+
+            }
+
+        }
+
+
+
+
+
+
+    }
+
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 2vh;
+    background: #000;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+
+    i {
+        align-self: center;
+    }
+}
