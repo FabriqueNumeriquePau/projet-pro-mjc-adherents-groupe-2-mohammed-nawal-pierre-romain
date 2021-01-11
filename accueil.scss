@@ -19,7 +19,8 @@ header {
     background-color: $primary-color;
 
     img {
-        width: 8vw;
+        width: 6vw;
+        height: 6vh;
     }
 
     .search {
@@ -43,7 +44,7 @@ header {
                 font-size: 18px;
             }
 
-            
+
 
         }
 
@@ -60,7 +61,8 @@ header {
             cursor: pointer;
             outline-style: none;
             font-size: 20px;
-            &:active{
+
+            &:active {
                 border-bottom: 1px solid white;
             }
 
@@ -71,13 +73,39 @@ header {
 
     }
 
+
+
+
+
+
+
     .profil {
-        background-color: white;
+
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        background-image: url('/wp2515187-black-panther-animal-wallpapers.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
         height: 8vh;
         width: 3.5vw;
         border-radius: 50%;
         margin-left: 35%;
+
+        p {
+            margin-top: 2em;
+            color: white;
+            font-size: 1.1em;
+            width: 5vw;
+            height: 4vh;
+            margin-top: 3em;
+            align-self: flex-end;
+
+        }
     }
+
+
 
     .sign_out {
         width: 3vw;
@@ -86,8 +114,9 @@ header {
         border-bottom: 3px solid white;
         background-color: rgb(48, 165, 159);
         cursor: pointer;
-        &:active{
-            border-bottom: 1px solid white ;
+
+        &:active {
+            border-bottom: 1px solid white;
         }
 
         i {
@@ -102,34 +131,85 @@ main {
     flex-direction: row;
 
     nav {
+        z-index: 2;
         background-color: $primary-color;
-        width: 8vw;
-        height: 90vh;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
+        width: 5vw;
+        height: 100vh;
+        display: block;
         li {
-            margin-bottom: .8rem;
-            font-size: 5vh;
-            font-size: 3vw;
+
+
+            list-style: none;
+            width: 19vw;
+            height: 10vh;
+            display: flex;
+            font-size: 2em;
 
 
 
 
             a {
-                color: white;
-                transition-duration: 0.4s;
-                cursor: pointer;
 
-                &:hover {
-                    color: cadetblue;
+                text-decoration: none;
+                margin-top: 1em;
+                width: 20vw;
+                height: 10vh;
+                display: flex;
+                align-items: baseline;
+                color: white;
+
+                span {
+                    text-align: right;
+                    font-size: .8em;
+                }
+
+                i {
+
+                    display: flex;
+                    justify-content: right;
+                    width: 5vw;
+                    margin-left: .3em;
+                    font-size: 1.8em;
                 }
             }
+        }
+        .fa-home:hover {
+            color: rgb(175, 175, 174);
+        }
+
+        .fa-users:hover {
+            color: #009BFF;
 
         }
+
+        .fa-handshake:hover {
+            color: #E180C6;
+        }
+
+        .fa-running:hover {
+            color: #FF8A00;
+        }
+
+        .fa-microphone:hover {
+            color: #E44747;
+        }
+
+        .fa-envelope:hover {
+            color: #543EDD;
+        }
+
+        .fa-user-plus:hover {
+            color: #15202B;
+        }
+
+        .fa-chart-area:hover {
+            color: #D9A902;
+        }
+
+        .fa-file-excel:hover {
+            color: #047501;
+        }
+
     }
 
     section {
@@ -287,10 +367,13 @@ main {
     }
 
 }
+
+
+
 footer {
     position: fixed;
     width: 100%;
-    height: 6.6vh;
+    height: 2vh;
     background: #000;
     bottom: 0;
     color: white;
