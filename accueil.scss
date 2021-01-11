@@ -131,29 +131,19 @@ main {
     flex-direction: row;
 
     nav {
-        z-index: 2;
+  
         background-color: $primary-color;
-        width: 5vw;
+        width: 20vw;
         height: 100vh;
         display: block;
         li {
-
-
-            list-style: none;
-            width: 19vw;
-            height: 10vh;
-            display: flex;
+            list-style: none;           
             font-size: 2em;
-
-
-
 
             a {
 
                 text-decoration: none;
                 margin-top: 1em;
-                width: 20vw;
-                height: 10vh;
                 display: flex;
                 align-items: baseline;
                 color: white;
@@ -167,7 +157,6 @@ main {
 
                     display: flex;
                     justify-content: right;
-                    width: 5vw;
                     margin-left: .3em;
                     font-size: 1.8em;
                 }
@@ -256,6 +245,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 justify-content: space-evenly;
+                white-space: nowrap;
 
                 &:hover {
                     transform: scale(1.2);
