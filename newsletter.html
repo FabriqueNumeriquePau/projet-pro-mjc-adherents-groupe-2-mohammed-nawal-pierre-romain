@@ -17,14 +17,23 @@
 
 <body>
     <header>
-        <img src="./img/logoMjc.png" alt="">
+        <img src="../logoMjc.png" alt="">
         <div class="search">
             <input search="text" placeholder="Rechercher">
-            <button><i class="fas fa-search"></i></button>
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
     </header>
-    <nav>
-        <ul>
+
+    <main>
+        <nav>
             <li><a href=""><i class="fas fa-home"></i></a></li>
             <li><a href=""><i class="fas fa-users"></i></a></li>
             <li><a href=""><i class="far fa-handshake"></i></a></li>
@@ -34,15 +43,14 @@
             <li><a href=""><i class="far fa-file-excel"></i></a></li>
             <li><a href=""><i class="fas fa-chart-area"></i></a></li>
             <li><a href=""><i class="fas fa-user-plus"></i></a></li>
-        </ul>
-    </nav>
+        </nav>
     <h1>Newsletter</h1>
     <form action="#">
         <fieldset>
             <legend>Créer une liste de destinataires :</legend>
             <p><label for="activite">Par activité :</label></p>
             <select name="activite" id="activite" required>
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
                 <optgroup label="Bien-être">
                     <option value="fleursdepeau">A Fleurs de Peau</option>
                     <option value="hearfulness">Heartfulness</option>
@@ -96,12 +104,12 @@
 
             <p><label for="evenement">Par évènement :</label></p>
             <select name="evenement" id="evenement" required>
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
             </select>
 
             <p><label for="age">Par tranche d'âge :</label></p>
             <select name="age" id="age" required>
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
             </select>
 
             <p><label for="import">Importer une liste :</label></p>
@@ -112,17 +120,17 @@
             <legend>Information sur l'expéditeur :</legend>
             <p><label for="nom">Nom de l'expediteur :</label></p>
             <select name="nom" id="nom" required>
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
             </select>
 
             <p><label for="email">Email de l'expéditeur :</label></p>
             <select name="email" id="email">
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
             </select>
 
             <p><label for="objet">Object :</label></p>
             <select name="objet" id="objet">
-                <option value="">--Choisir une option--</option>
+                <option value="">--Choisir une--</option>
             </select>
         </fieldset>
         <div class="container">
@@ -171,7 +179,7 @@
         <input type="submit" value="HISTORIQUE" />
     </form>
 
-    <footer><i class="far fa-copyright">COPYRIGHT- MJCDESFLEURS 2020- TOUS DROITS RÉSERVÉS</i></footer>
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="js/newsletter.js"></script>

@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/commun.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
     <title>Formulaire Adhérant</title>
 </head>
 
 <body>
     <header>
-        <img src="./img/logoMjc.png" alt="">
+        <img src="img/logoMjc.png" alt="">
         <div class="search">
             <input search="text" placeholder="Rechercher">
-            <button><i class="fas fa-search"></i></button>
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
         </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
     </header>
-    <nav>
-        <ul>
-            <li><a href=""><i class="fas fa-home"></i></a></li>
-            <li><a href=""><i class="fas fa-users"></i></a></li>
-            <li><a href=""><i class="far fa-handshake"></i></a></li>
-            <li><a href=""><i class="fas fa-running"></i></a></li>
-            <li><a href=""><i class="fas fa-microphone"></i></a></li>
-            <li><a href=""><i class="far fa-envelope"></i></a></li>
-            <li><a href=""><i class="far fa-file-excel"></i></a></li>
-            <li><a href=""><i class="fas fa-chart-area"></i></a></li>
-            <li><a href=""><i class="fas fa-user-plus"></i></a></li>
-        </ul>
-    </nav>
+
+    <main>
+        <nav>
+            <li><a href=""><i class="fas fa-home"></i><span class="fa-home">Tableau de Bord</span></a></li>
+            <li><a href=""><i class="fas fa-users"></i><span class="fa-users">Adhérents</span></a></li>
+            <li><a href=""><i class="far fa-handshake"></i><span class="fa-handshake">Partenaires</span></a></li>
+            <li><a href=""><i class="fas fa-running"></i><span class="fa-running">Activités</span></a></li>
+            <li><a href=""><i class="fas fa-microphone"></i><span class="fa-microphone">Événements</span></a></li>
+            <li><a href=""><i class="far fa-envelope"></i><span class="fa-envelope">Statistiques</span></a></li>
+            <li><a href=""><i class="far fa-file-excel"></i><span class="fa-file-excel">Import/Excel</span></a></li>
+            <li><a href=""><i class="fas fa-user-plus"></i><span class="fa-user-plus">Permissions</span></a></li>
+            <li><a href=""><i class="fas fa-chart-area"></i><span class="fa-chart-area">Newsletters</span></a></li>
+        </nav>
     <section>
         <h1>Création d'un compte adhérant :</h1>
         <form action="#">
@@ -159,7 +167,7 @@
             <input type="submit" value="Ajouter">
         </form>
     </section>
-    <footer><i class="far fa-copyright">COPYRIGHT- MJCDESFLEURS 2020- TOUS DROITS RÉSERVÉS</i></footer>
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
 </body>
 
 </html>

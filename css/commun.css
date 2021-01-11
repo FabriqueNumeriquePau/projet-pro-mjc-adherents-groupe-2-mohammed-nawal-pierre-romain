@@ -1,77 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #15202B;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 header {
-    background: #2B3D50;
-    height: 5em;
-    display: flex;
-    justify-content: space-between;
-  }
-  header img {
-    margin-left: 1em;
-    width: 7em;
-  }
-  header .search {
-    margin-right: 2em;
-    align-self: center;
-  }
-  header .search input {
-    border-radius: 2em;
-    width: 30em;
-  }
-  header .search input::placeholder {
-    color: #949191;
-    font-size: 15px;
-  }
-  header .search input:placeholder-shown {
-    border-style: none;
-    outline-style: unset;
-  }
-  header .search button {
-    background-color: darkcyan;
-    border-radius: 1em;
-    font-size: 1em;
-    color: white;
-    border-style: none;
-    cursor: pointer;
-  }
-  
-  nav {
-    position: fixed;
-    background: #837878;
-    width: 8vw;
-    height: 100vh;
-    background-color: #2B3D50;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-top: 4em;
-    align-items: center;
-  }
-  nav ul li {
-    font-size: 3.5em;
-    margin-bottom: 0.8rem;
-  }
-  nav ul li a {
-    color: white;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  nav ul li a:hover {
-    color: cadetblue;
-  }
-  footer {
-    position: absolute;
-    width: 100%;
-    height: 6.6vh;
-    background: #000;
-    bottom: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    background-color: #2B3D50;
-  }
-  footer i {
-    align-self: center;
-  }
-  
-  
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  background-color: #2B3D50;
+}
+header img {
+  width: 6vw;
+  height: 6vh;
+}
+header .search {
+  align-self: center;
+}
+header .search input {
+  border-radius: 1em 0 0 1em;
+  width: 31em;
+  height: 2.5em;
+  margin-left: 5em;
+  align-self: center;
+  outline-style: none;
+}
+header .search input:focus {
+  color: yell;
+}
+header .search input::placeholder {
+  color: #949191;
+  font-size: 18px;
+}
+header .search .submit {
+  margin: 1px 0 0 -6px;
+  align-self: center;
+  width: 4em;
+  height: 1.79em;
+  border-bottom: 3px solid white;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+  outline-style: none;
+  font-size: 20px;
+}
+header .search .submit:active {
+  border-bottom: 1px solid white;
+}
+header .profil {
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  background-image: url("/img/wp2515187-black-panther-animal-wallpapers.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8vh;
+  width: 3.5vw;
+  border-radius: 50%;
+  margin-left: 35%;
+}
+header .profil p {
+  margin-top: 2em;
+  color: white;
+  font-size: 1.1em;
+  width: 5vw;
+  height: 4vh;
+  margin-top: 3em;
+  align-self: flex-end;
+}
+header .sign_out {
+  width: 3vw;
+  outline-style: none;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: #30a59f;
+  cursor: pointer;
+}
+header .sign_out:active {
+  border-bottom: 1px solid white;
+}
+header .sign_out i {
+  font-size: 24px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+main nav {
+  z-index: 4;
+  background-color: #2B3D50;
+  width: 5vw;
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+}
+main nav:hover {
+  width: 18vw;
+  transition: all 0.5s ease-in-out;
+}
+main nav li {
+  list-style: none;
+  width: 19vw;
+  height: 10vh;
+  display: flex;
+  font-size: 2em;
+}
+main nav li a {
+  text-decoration: none;
+  margin-top: 1em;
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  align-items: baseline;
+  color: white;
+}
+main nav li a span {
+  text-align: right;
+  font-size: 0.8em;
+}
+main nav li a i {
+  display: flex;
+  justify-content: right;
+  width: 5vw;
+  margin-left: 0.3em;
+  font-size: 1.8em;
+}
+main nav li a .fa-home:hover {
+  color: #afafae;
+}
+main nav li a .fa-users:hover {
+  color: #009BFF;
+}
+main nav li a .fa-handshake:hover {
+  color: #E180C6;
+}
+main nav li a .fa-running:hover {
+  color: #FF8A00;
+}
+main nav li a .fa-microphone:hover {
+  color: #E44747;
+}
+main nav li a .fa-envelope:hover {
+  color: #543EDD;
+}
+main nav li a .fa-user-plus:hover {
+  color: #15202B;
+}
+main nav li a .fa-chart-area:hover {
+  color: #D9A902;
+}
+main nav li a .fa-file-excel:hover {
+  color: #047501;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 2vh;
+  background: #000;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #2B3D50;
+}
+footer i {
+  align-self: center;
+}
