@@ -8,6 +8,7 @@ body {
     overflow: hidden;
 
 
+
 }
 
 $primary-color : #2B3D50;
@@ -20,23 +21,25 @@ header {
     background-color: $primary-color;
 
     img {
+        padding: 2em;
         width: 6vw;
         height: 6vh;
     }
 
     .search {
+        display: flex;
         align-self: center;
 
         input {
             border-radius: 1em 0 0 1em;
             width: 31em;
             height: 2.5em;
-            margin-left: 5em;
             align-self: center;
             outline-style: none;
 
+
             &:focus {
-                color: yell;
+                color: black;
 
             }
 
@@ -50,7 +53,7 @@ header {
         }
 
         .submit {
-            margin: 1px 0 0 -6px;
+
             align-self: center;
             width: 4em;
             height: 1.79em;
@@ -73,12 +76,6 @@ header {
 
 
     }
-
-
-
-
-
-
 
     .profil {
 
@@ -141,22 +138,20 @@ main {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        z-index: 3;
 
-        &:hover  {
+        &:hover {
             width: 20vw;
             transition: all .5s ease-in-out;
             display: inline;
-            
+
         }
-        
+
         ul {
-           
-            
-            
             display: contents;
-            
+
             li {
-              
+
                 list-style: none;
                 font-size: 2em;
 
@@ -166,21 +161,20 @@ main {
                     margin-top: 1em;
                     color: white;
                     display: flex;
+                    justify-content: flex-start;
                     align-items: center;
 
                     span {
-                        margin-left: .7em;
+                        margin-left: 1.2em;
                         font-size: .8em;
                         white-space: nowrap;
-                       
-
                     }
 
                     i {
 
                         width: 5vw;
                         margin-left: .3em;
-                        font-size: 1.8em;
+                        font-size: 1.4em;
                     }
                 }
 
@@ -237,16 +231,6 @@ main {
 
 
 
-section {
-
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 90vh;
-    overflow: scroll;
-    color: white;
-
-}
 
 
 footer {
@@ -263,4 +247,20 @@ footer {
     i {
         align-self: center;
     }
+}
+
+::-webkit-scrollbar {
+
+    background-color: #15202B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(243, 243, 245);
+    border-radius: 2em;
+}
+
+
+
+::-webkit-scrollbar-corner {
+    background-color: #15202B;
 }
