@@ -136,6 +136,7 @@ main {
         width: 5vw;
         height: 100vh;
         display: flex;
+
         flex-direction: column;
         overflow: hidden;
         z-index: 3;
@@ -149,6 +150,8 @@ main {
 
         ul {
             display: contents;
+
+
 
             li {
 
@@ -249,18 +252,41 @@ footer {
     }
 }
 
+// ::-webkit-scrollbar {
+
+//     background-color: #15202B;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: rgb(15, 15, 47);
+//     border-radius: 2em;
+
+// }
+
+
+
+// ::-webkit-scrollbar-corner {
+//     background-color: #15202B;
+// }
+
+
 ::-webkit-scrollbar {
-
-    background-color: #15202B;
+    width: 1em;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #15202B
+}
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(243, 243, 245);
-    border-radius: 2em;
+    background: rgb(255, 255, 255);
+    border-radius: 1em;
 }
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2E3438;
 
-
-::-webkit-scrollbar-corner {
-    background-color: #15202B;
 }
