@@ -17,8 +17,6 @@ section {
         justify-content: space-evenly;
         align-items: center;
 
-
-
         h1 {
             text-align: center;
 
@@ -29,17 +27,14 @@ section {
     .wrapper {
         overflow-y: scroll;
 
-
         table {
             width: 250vw;
-
             table-layout: fixed;
             text-align: center;
             white-space: nowrap;
             border-collapse: collapse;
 
             tr {
-
                 padding: 2em;
             }
 
