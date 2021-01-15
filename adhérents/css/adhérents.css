@@ -8,17 +8,41 @@ section {
   text-align: center;
   display: flex;
   flex-direction: column;
+  /*----------tableau-----------------*/
 }
 section #sous-header {
   background: #15202B;
-  width: 100vw;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  white-space: nowrap;
   align-items: center;
 }
 section #sous-header h1 {
-  text-align: center;
+  margin-left: 45%;
+}
+section #sous-header .nouveau {
+  width: 20%;
+}
+section #sous-header .nouveau button {
+  outline-style: none;
+  border: none;
+  border-radius: 1.1em;
+  color: white;
+  margin-left: 1em;
+  font-size: 1.2em;
+  padding: 0.4em;
+  cursor: pointer;
+  border-bottom: 2px solid #303030;
+}
+section #sous-header .nouveau button:active {
+  border-bottom: 1px solid white;
+}
+section #sous-header .nouveau #ajouter {
+  background-color: #3dafbe;
+}
+section #sous-header .nouveau #supprimer {
+  background-color: #972424;
 }
 section .wrapper {
   overflow-y: scroll;
@@ -53,4 +77,36 @@ tr:nth-child(odd) {
   color: black;
   background-color: white;
   cursor: pointer;
+}
+
+/*---------------------modal-----------------------*/
+.wrapper-modal {
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+  background: #15202bb2;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper-modal #modal {
+  margin: auto;
+  width: 50%;
+  height: 80vh;
+  padding: 3em;
+  background: #353434;
+  border-radius: 1em;
+}
+.wrapper-modal #modal h1 {
+  font-size: 2em;
+}
+.wrapper-modal #modal .form-adherents {
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  white-space: pre;
+  white-space: pre-line;
+}
+.wrapper-modal #modal .form-adherents p {
+  text-align: left;
 }

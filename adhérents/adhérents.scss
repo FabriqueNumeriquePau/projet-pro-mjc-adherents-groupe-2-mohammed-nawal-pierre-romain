@@ -11,18 +11,55 @@ section {
 
     #sous-header {
         background: #15202B;
-        width: 100vw;
+        width: 90%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        white-space: nowrap;
         align-items: center;
 
         h1 {
-            text-align: center;
-
+            // text-align: center;
+            margin-left: 45%;
 
         }
+
+        .nouveau {
+            width: 20%;
+
+            // margin-left: 27%;
+
+
+            button {
+                outline-style: none;
+                border: none;
+                border-radius: 1.1em;
+                color: white;
+                margin-left: 1em;
+                font-size: 1.2em;
+                padding: .4em;
+                cursor: pointer;
+                border-bottom: 2px solid rgb(48, 48, 48);
+
+                &:active {
+                    border-bottom: 1px solid white;
+                }
+
+            }
+
+            #ajouter {
+                background-color: rgb(61, 175, 190);
+            }
+
+            #supprimer {
+                background-color: rgb(151, 36, 36);
+            }
+
+        }
+
+
     }
+
+    /*----------tableau-----------------*/
 
     .wrapper {
         overflow-y: scroll;
@@ -38,8 +75,6 @@ section {
                 padding: 2em;
             }
 
-
-
             thead,
             th {
 
@@ -47,11 +82,7 @@ section {
                 height: 4em;
                 position: sticky;
                 top: 0;
-
-
             }
-
-
         }
     }
 }
@@ -70,4 +101,58 @@ tr:nth-child(odd) {
     color: black;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+}
+
+
+/*---------------------modal-----------------------*/
+.wrapper-modal {
+    // top: 0;
+    // left: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    background: #15202bb2;
+    width: 100vw;
+    height: 100vh;
+    // opacity: 0;
+    // visibility: hidden;
+
+    #modal {
+      
+        margin: auto;
+        width: 50%;
+        height: 80vh;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -60%);
+        padding: 3em;
+        background: rgb(53, 52, 52);
+        border-radius: 1em;
+
+        h1 {
+            font-size: 2em;
+        }
+
+
+        .form-adherents {
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            white-space: pre;
+            // transform: translateX(15%);
+            white-space: pre-line;
+            
+            
+            p {
+             
+                text-align: left;
+            }
+
+        }
+
+
+
+
+    }
 }
