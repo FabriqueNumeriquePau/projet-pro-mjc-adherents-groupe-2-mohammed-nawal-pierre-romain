@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #15202B;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  background-color: #2B3D50;
+}
+header img {
+  width: 6vw;
+  height: 6vh;
+}
+header .search {
+  align-self: center;
+}
+header .search input {
+  border-radius: 1em 0 0 1em;
+  width: 31em;
+  height: 2.5em;
+  margin-left: 5em;
+  align-self: center;
+  outline-style: none;
+}
+header .search input:focus {
+  color: yell;
+}
+header .search input::placeholder {
+  color: #949191;
+  font-size: 18px;
+}
+header .search .submit {
+  margin: 1px 0 0 -6px;
+  align-self: center;
+  width: 4em;
+  height: 1.79em;
+  border-bottom: 3px solid white;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+  outline-style: none;
+  font-size: 20px;
+}
+header .search .submit:active {
+  border-bottom: 1px solid white;
+}
+header .profil {
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  background-image: url("/wp2515187-black-panther-animal-wallpapers.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 8vh;
+  width: 3.5vw;
+  border-radius: 50%;
+  margin-left: 35%;
+}
+header .profil p {
+  margin-top: 2em;
+  color: white;
+  font-size: 1.1em;
+  width: 5vw;
+  height: 4vh;
+  margin-top: 3em;
+  align-self: flex-end;
+}
+header .sign_out {
+  width: 3vw;
+  outline-style: none;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: #30a59f;
+  cursor: pointer;
+}
+header .sign_out:active {
+  border-bottom: 1px solid white;
+}
+header .sign_out i {
+  font-size: 24px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+main nav {
+  background-color: #2B3D50;
+  width: 20vw;
+  height: 100vh;
+  display: block;
+}
+main nav li {
+  list-style: none;
+  font-size: 2em;
+}
+main nav li a {
+  text-decoration: none;
+  margin-top: 1em;
+  display: flex;
+  align-items: baseline;
+  color: white;
+}
+main nav li a span {
+  text-align: right;
+  font-size: 0.8em;
+}
+main nav li a i {
+  display: flex;
+  justify-content: right;
+  margin-left: 0.3em;
+  font-size: 1.8em;
+}
+main nav .fa-home:hover {
+  color: #afafae;
+}
+main nav .fa-users:hover {
+  color: #009BFF;
+}
+main nav .fa-handshake:hover {
+  color: #E180C6;
+}
+main nav .fa-running:hover {
+  color: #FF8A00;
+}
+main nav .fa-microphone:hover {
+  color: #E44747;
+}
+main nav .fa-envelope:hover {
+  color: #543EDD;
+}
+main nav .fa-user-plus:hover {
+  color: #15202B;
+}
+main nav .fa-chart-area:hover {
+  color: #D9A902;
+}
+main nav .fa-file-excel:hover {
+  color: #047501;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+}
+main section #stats {
+  height: 40vh;
+  width: 100vw;
+}
+main section #buttons {
+  vertical-align: bottom;
+  margin-left: 9vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  height: 40vh;
+  width: 70vw;
+}
+main section #buttons button {
+  padding-left: 1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.8em;
+  height: 5em;
+  width: 18em;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  white-space: nowrap;
+}
+main section #buttons button:hover {
+  transform: scale(1.2);
+}
+main section #buttons button i {
+  font-size: 70px;
+}
+main section #buttons .button1 {
+  background-color: #15202B;
+  color: #009BFF;
+  border: 2px solid #009BFF;
+}
+main section #buttons .button1:hover {
+  background-color: #009bff;
+  color: #15202B;
+}
+main section #buttons .button2 {
+  background-color: #15202B;
+  color: #E180C6;
+  border: 2px solid #E180C6;
+}
+main section #buttons .button2:hover {
+  background-color: #E180C6;
+  color: #15202B;
+}
+main section #buttons .button3 {
+  background-color: #15202B;
+  color: #FF8A00;
+  border: 2px solid #FF8A00;
+}
+main section #buttons .button3:hover {
+  background-color: #FF8A00;
+  color: #15202B;
+}
+main section #buttons .button4 {
+  background-color: #15202B;
+  color: #E44747;
+  border: 2px solid #E44747;
+}
+main section #buttons .button4:hover {
+  background-color: #E44747;
+  color: #15202B;
+}
+main section #buttons .button5 {
+  background-color: #15202B;
+  color: #543EDD;
+  border: 2px solid #543EDD;
+}
+main section #buttons .button5:hover {
+  background-color: #543EDD;
+  color: #15202B;
+}
+main section #buttons .button6 {
+  background-color: #15202B;
+  color: #047501;
+  border: 2px solid #047501;
+}
+main section #buttons .button6:hover {
+  background-color: #047501;
+  color: #15202B;
+}
+main section #buttons .button7 {
+  background-color: #15202B;
+  color: #D9A902;
+  border: 2px solid #D9A902;
+}
+main section #buttons .button7:hover {
+  background-color: #D9A902;
+  color: #15202B;
+}
+main section #buttons .button8 {
+  background-color: #15202B;
+  color: #fff;
+  border: 2px solid #fff;
+}
+main section #buttons .button8:hover {
+  background-color: #fff;
+  color: #15202B;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 2vh;
+  background: #000;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #2B3D50;
+}
+footer i {
+  align-self: center;
+}

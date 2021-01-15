@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #15202B;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+$primary-color : #2B3D50;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 8vh;
+    background-color: $primary-color;
+
+    img {
+        width: 6vw;
+        height: 6vh;
+    }
+
+    .search {
+        align-self: center;
+
+        input {
+            border-radius: 1em 0 0 1em;
+            width: 31em;
+            height: 2.5em;
+            margin-left: 5em;
+            align-self: center;
+            outline-style: none;
+
+            &:focus {
+                color: yell;
+
+            }
+
+            &::placeholder {
+                color: rgb(148, 145, 145);
+                font-size: 18px;
+            }
+
+
+
+        }
+
+        .submit {
+            margin: 1px 0 0 -6px;
+            align-self: center;
+            width: 4em;
+            height: 1.79em;
+            border-bottom: 3px solid white;
+            background: #00B4CC;
+            text-align: center;
+            color: #fff;
+            border-radius: 0 1em 1em 0;
+            cursor: pointer;
+            outline-style: none;
+            font-size: 20px;
+
+            &:active {
+                border-bottom: 1px solid white;
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+    .profil {
+
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        background-image: url('/wp2515187-black-panther-animal-wallpapers.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 8vh;
+        width: 3.5vw;
+        border-radius: 50%;
+        margin-left: 35%;
+
+        p {
+            margin-top: 2em;
+            color: white;
+            font-size: 1.1em;
+            width: 5vw;
+            height: 4vh;
+            margin-top: 3em;
+            align-self: flex-end;
+
+        }
+    }
+
+
+
+    .sign_out {
+        width: 3vw;
+        outline-style: none;
+        border: none;
+        border-bottom: 3px solid white;
+        background-color: rgb(48, 165, 159);
+        cursor: pointer;
+
+        &:active {
+            border-bottom: 1px solid white;
+        }
+
+        i {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    nav {
+  
+        background-color: $primary-color;
+        width: 20vw;
+        height: 100vh;
+        display: block;
+        li {
+            list-style: none;           
+            font-size: 2em;
+
+            a {
+
+                text-decoration: none;
+                margin-top: 1em;
+                display: flex;
+                align-items: baseline;
+                color: white;
+
+                span {
+                    text-align: right;
+                    font-size: .8em;
+                }
+
+                i {
+
+                    display: flex;
+                    justify-content: right;
+                    margin-left: .3em;
+                    font-size: 1.8em;
+                }
+            }
+        }
+        .fa-home:hover {
+            color: rgb(175, 175, 174);
+        }
+
+        .fa-users:hover {
+            color: #009BFF;
+
+        }
+
+        .fa-handshake:hover {
+            color: #E180C6;
+        }
+
+        .fa-running:hover {
+            color: #FF8A00;
+        }
+
+        .fa-microphone:hover {
+            color: #E44747;
+        }
+
+        .fa-envelope:hover {
+            color: #543EDD;
+        }
+
+        .fa-user-plus:hover {
+            color: #15202B;
+        }
+
+        .fa-chart-area:hover {
+            color: #D9A902;
+        }
+
+        .fa-file-excel:hover {
+            color: #047501;
+        }
+
+    }
+
+    section {
+
+        display: flex;
+        flex-direction: column;
+
+
+        #stats {
+            height: 40vh;
+            width: 100vw;
+        }
+
+        #buttons {
+            vertical-align: bottom;
+            margin-left: 9vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+            height: 40vh;
+            width: 70vw;
+
+
+
+
+
+
+            button {
+                padding-left: 1em;
+                text-transform: uppercase;
+                border: none;
+                border-radius: .8em;
+                height: 5em;
+                width: 18em;
+                vertical-align: top;
+                text-align: center;
+                text-decoration: none;
+                font-size: 16px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                white-space: nowrap;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+
+                i {
+                    font-size: 70px;
+                }
+
+            }
+
+            .button1 {
+                background-color: #15202B;
+                color: #009BFF;
+                border: 2px solid #009BFF;
+
+
+                &:hover {
+                    background-color: #009bff;
+                    color: #15202B;
+                }
+            }
+
+
+            .button2 {
+                background-color: #15202B;
+                color: #E180C6;
+                border: 2px solid #E180C6;
+
+                &:hover {
+                    background-color: #E180C6;
+                    color: #15202B;
+                }
+            }
+
+            .button3 {
+                background-color: #15202B;
+
+                color: #FF8A00;
+                border: 2px solid #FF8A00;
+
+                &:hover {
+                    background-color: #FF8A00;
+                    color: #15202B;
+
+                }
+            }
+
+            .button4 {
+                background-color: #15202B;
+                color: #E44747;
+                border: 2px solid #E44747;
+
+                &:hover {
+                    background-color: #E44747;
+                    color: #15202B;
+
+                }
+            }
+
+            .button5 {
+                background-color: #15202B;
+                color: #543EDD;
+                border: 2px solid #543EDD;
+
+                &:hover {
+                    background-color: #543EDD;
+                    color: #15202B;
+
+                }
+            }
+
+            .button6 {
+                background-color: #15202B;
+                color: #047501;
+                border: 2px solid #047501;
+
+                &:hover {
+                    background-color: #047501;
+                    color: #15202B;
+
+                }
+            }
+
+            .button7 {
+                background-color: #15202B;
+                color: #D9A902;
+                border: 2px solid #D9A902;
+
+                &:hover {
+                    background-color: #D9A902;
+                    color: #15202B;
+                }
+            }
+
+            .button8 {
+                background-color: #15202B;
+                color: #fff;
+                border: 2px solid #fff;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #15202B;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 2vh;
+    background: #000;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+
+    i {
+        align-self: center;
+    }
+}
