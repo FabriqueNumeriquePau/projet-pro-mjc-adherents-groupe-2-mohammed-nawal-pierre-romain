@@ -2,7 +2,102 @@ body{
     background-color: transparent;
     margin: 0;
   }
-  
+
+/*****************************************
+                  Body
+*****************************************/
+h1{
+  color: white;
+  margin-left: 3em;
+  margin-top: 3vh;
+  font-size: 6vh;
+}
+
+fieldset, .container, h1, .button{
+  position: absolute;
+}
+
+fieldset{
+  width: 40vh;
+  height:43vh;
+  background-color: #2B3D50;
+  border-radius: 3%;
+  border: none;
+  color: white;
+  margin-top: 8vh;
+}
+
+legend{
+  font-size: 2vh;
+}
+
+.destinataire{
+  margin-left: 6vh;
+}
+.expediteur{
+  margin-left: 80vh;
+}
+legend{
+  padding-top: 5vh;
+}
+
+select{
+  background-color: #484F58;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  width: 50vh;
+  height: 2.8vh;
+}
+
+.file{
+  background-color: #484f58;
+  width: 47vh;
+  height: 3vh;
+  border: none;
+  border-radius: 1em;
+}
+
+span{
+  border: solid 2px rgb(199,199,199);
+  border-radius: 8px;
+  height: 10vh;
+  background-color: rgb(199, 199, 199);
+  font-size: 20px;
+}
+
+#import{
+  display:none;
+}
+
+.button{
+  margin-left: 88em;
+  margin-top: 12em;
+}
+
+.envoyer{
+  width: 8em;
+  height: 4vh;
+  color: white;
+  background-color: rgb(105, 69, 236);
+  border-radius: 8px;
+  border: none;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+}
+.historique{
+  width: 8em;
+  height: 4vh;
+  margin-top: 1em;
+  color: white;
+  background-color: rgb(105, 69, 236);
+  border-radius: 8px;
+  border: none;
+  display: block;
+  font-size: 25px;
+  text-align: center;
+}
 
 /*****************************************
             Texte Editeur
@@ -12,25 +107,24 @@ body{
     transform: rotateY(180deg);
   }
   .container{
-    width: 100vw;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    background: #EFEFEF;
+    margin-top: 54vh;
+    margin-left: 3em;
+    width: 118em;
   }
   .editeur, .htmlview{
-    height: 300px;
-    border: 1px solid #28324E;
-    margin: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: auto;
-    overflow: auto; 
+    color: white;
+    height: 25vh;
+    border: 1px solid #293657;
     text-align: left !important;
+    border-right: white solid 1px;
+    border-left: white solid 0.8px;
     padding: 10px;
     outline: none;
     border-radius: 5px;
-    font-size: 14px !important;
+    font-size: 20px !important;
     font-family: 'Nunito', sans-serif;
   }
   .editeur{
@@ -44,14 +138,14 @@ body{
   }
   
   .editeur{
-    background-color: white;
+    background-color: #484F58;
   }
   
   .panel-boutons{
     position: relative;
     text-align: center !important;
-    margin-left: 10%;
-    margin-right: 10%;
+    border-right: solid white 1px ;
+    border-left: white solid 0.8px;
     border-radius: 5px;
     width: auto;
     background-color: #333333;
@@ -69,14 +163,11 @@ body{
   
   .panel-boutons button{
     font-size: 1.3vw;
-    width: 2.6vw;
-    height: 2.4vw;
     background-color: #333333;
     border: none;
     outline: none;
     cursor: pointer;
     transition: all .6s;
-    border-radius: 5px;
     color: white;
   }
   
@@ -89,45 +180,11 @@ body{
     color: #EB6B56;
   }
   .wysiwyg{
-    width: 80%;
-    margin: auto;
-    padding: 2vw;
+    width: 85%;
     border-radius: 10px;
     position: relative;
-  }
-  
-  #save{
-    background-color: #1ABC9C;
-    border: none;
-    font-size: 1.5vw;
-    padding: 1.5vw;
-    padding-top: 0.6vw;
-    padding-bottom: 0.6vw;
-    border-radius: 5px;
-    color: white;
-    transition: all .6s;
-    outline: none;
-  }
-  #save:hover{
-    background-color: #00A885;
-    box-shadow: 0px 0px 10px 0px rgba(156, 156, 156, 0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(156, 156, 156, 0.75);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(156, 156, 156, 0.75);
-  }
-  
-  .message-popup{
-    position: absolute;
-    background-color: #00A885;
-    opacity: .0;
-    color: white;
-    font-size: 1.2vw;
-    padding: 1.2vw;
-    padding-top: 0.6vw;
-    padding-bottom: 0.6vw;
-    border-radius: 5px;
-    transition: all .9s;
-    top: -3.4vw;
-    left: 12%;
-    right: 12%;
-    width: auto;
+    border-left: solid 15px rgb(102, 102, 102);
+    border-right: solid 30px rgb(102, 102, 102);
+    border-top: solid 15px rgb(102, 102, 102);
+    border-bottom: solid 15px rgb(102, 102, 102);
   }
