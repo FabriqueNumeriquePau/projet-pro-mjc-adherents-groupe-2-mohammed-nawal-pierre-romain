@@ -133,51 +133,51 @@ main {
     nav {
         position: absolute;
         background-color: $primary-color;
-        width: 5vw;
+        
         height: 100vh;
         display: flex;
-
         flex-direction: column;
-        overflow: hidden;
-        z-index: 3;
-
-        &:hover {
-            width: 20vw;
+       
+        z-index: 2;
+        
+        &:hover span {
             transition: all .5s ease-in-out;
+            width: 20vw;
             display: inline;
+           
 
         }
 
         ul {
-            display: contents;
+            margin: 0;
+            padding: 0;
+                 
 
 
 
             li {
 
                 list-style: none;
-                font-size: 2em;
+                margin-top: 1em;
 
                 a {
 
                     text-decoration: none;
-                    margin-top: 1em;
                     color: white;
                     display: flex;
-                    justify-content: flex-start;
                     align-items: center;
 
                     span {
                         margin-left: 1.2em;
-                        font-size: .8em;
+                        font-size: 2em;
                         white-space: nowrap;
+                        display: none;
                     }
 
                     i {
-
-                        width: 5vw;
-                        margin-left: .3em;
-                        font-size: 1.4em;
+                        width: 2em;
+                        text-align: center;
+                        font-size: 3em;
                     }
                 }
 

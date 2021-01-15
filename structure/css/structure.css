@@ -99,42 +99,40 @@ main {
 main nav {
   position: absolute;
   background-color: #2B3D50;
-  width: 5vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  z-index: 3;
+  z-index: 2;
 }
-main nav:hover {
-  width: 20vw;
+main nav:hover span {
   transition: all 0.5s ease-in-out;
+  width: 20vw;
   display: inline;
 }
 main nav ul {
-  display: contents;
+  margin: 0;
+  padding: 0;
 }
 main nav ul li {
   list-style: none;
-  font-size: 2em;
+  margin-top: 1em;
 }
 main nav ul li a {
   text-decoration: none;
-  margin-top: 1em;
   color: white;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 main nav ul li a span {
   margin-left: 1.2em;
-  font-size: 0.8em;
+  font-size: 2em;
   white-space: nowrap;
+  display: none;
 }
 main nav ul li a i {
-  width: 5vw;
-  margin-left: 0.3em;
-  font-size: 1.4em;
+  width: 2em;
+  text-align: center;
+  font-size: 3em;
 }
 main nav .fa-home:hover {
   color: #afafae;
