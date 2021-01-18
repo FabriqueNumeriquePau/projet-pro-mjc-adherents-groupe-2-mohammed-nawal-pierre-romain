@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/newsletter.css">
     <link rel="stylesheet" href="css/commun.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>
+    <link href="../css/themes/dark.min.css" rel="stylesheet" type="text/css" />
+    <link href="./css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+    <script type="text/javascript" src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script type="text/javascript" src="./js/froala_editor.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+    <script id="language" src="./js/languages/fr.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
@@ -44,149 +49,135 @@
             <li><a href=""><i class="fas fa-chart-area"></i></a></li>
             <li><a href=""><i class="fas fa-user-plus"></i></a></li>
         </nav>
-    <h1>Newsletter</h1>
-    <form action="#">
-        <fieldset class="destinataire">
-            <legend>Créer une liste de destinataires :</legend>
-            <p><label for="activite">Par activité :</label></p>
-            <select name="activite" id="activite" required>
-                <option value=""></option>
-                <optgroup label="Bien-être">
-                    <option value="fleursdepeau">A Fleurs de Peau</option>
-                    <option value="hearfulness">Heartfulness</option>
-                    <option value="naturopathie">Naturopathie</option>
-                    <option value="yoga">Yoga</option>
-                </optgroup>
-                <optgroup label="Danse">
-                    <option value="claquettes">Claquettes américaines</option>
-                    <option value="breakdance">Breakdance</option>
-                    <option value="bollywood">Danse Bollywood</option>
-                    <option value="classique">Danse Classique & Jazz</option>
-                    <option value="flamenca">Danse Flamenca</option>
-                    <option value="hiphop">Danse Hip Hop</option>
-                    <option value="orientales">Danses Orientales</option>
-                    <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
-                    <option value="polynesienne">Danse Polynésienne</option>
-                    <option value="kids">Kids Danse (Regaeton)</option>
-                    <option value="tango">Tango Argentin</option>
-                    <option value="salsa">Salsa-Kizumba Batchata</option>
-                </optgroup>
-                <optgroup label="Lien Social">
-                    <option value="numeriques">Ateliers numériques</option>
-                    <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
-                    <option value="emploi">Un accompagnement vers l'emploi</option>
-                </optgroup>
-                <optgroup label="Musique">
-                    <option value="arpege">Arpèges Fleuis</option>
-                    <option value="chantespagnol">Atelier Chant Espagnol</option>
-                    <option value="chantafricain">Chant Africain</option>
-                    <option value="gospel">Chorale Gospel Évidence</option>
-                    <option value="apaulhom">Chorale Homme Apaul'hom</option>
-                    <option value="guitare">Guitare</option>
-                </optgroup>
-                <optgroup label="Sport">
-                    <option value="aquabike">Aquabike</option>
-                    <option value="aquagym">Aquagym</option>
-                    <option value="boxe">Boxe Educative Kick-Boxing</option>
-                    <option value="capoiera">Capoiera</option>
-                    <option value="cheerleading">Cheerleading</option>
-                    <option value="gymcardio">Gym Cardio / Insanity</option>
-                    <option value="gymsouplesse">Gym souplesse</option>
-                    <option value="gymfeminine">Gymnastique féminine</option>
-                    <option value="gymentretien">Gymnastique d'entretien</option>
-                    <option value="montagne">Montagne</option>
-                    <option value="musculation">Musculation</option>
-                    <option value="pilates">Pilates</option>
-                    <option value="stretching">Stretching postural</option>
-                    <option value="volleyball">Volleyball</option>
-                </optgroup>
-            </select>
-
-            <p><label for="evenement">Par évènement :</label></p>
-            <select name="evenement" id="evenement" required>
-                <option value=""></option>
-            </select>
-
-            <p><label for="age">Par tranche d'âge :</label></p>
-            <select name="age" id="age" required>
-                <option value=""></option>
-            </select>
-
-            <p><label for="import">Importer une liste :</label></p>
-            <label for="import" ><input type="button" for="import" class="file"><span>&#128193;</span></label>
-            <input type="file" name="import" id="import" />
-        </fieldset>
-
-        <fieldset class="expediteur">
-            <legend>Information sur l'expéditeur :</legend>
-            <p><label for="nom">Nom de l'expediteur :</label></p>
-            <select name="nom" id="nom" required>
-                <option value=""></option>
-            </select>
-
-            <p><label for="email">Email de l'expéditeur :</label></p>
-            <select name="email" id="email">
-                <option value=""></option>
-            </select>
-
-            <p><label for="objet">Object :</label></p>
-            <select name="objet" id="objet">
-                <option value=""></option>
-            </select>
-        </fieldset>
-        <div class="container">
-            <div class="wysiwyg">
-                <div class="panel-boutons">
-                    <div class="bouton-groupe">
-                        <button type="button" id="bold"><i class="fa fa-bold"></i></button>
-                        <button type="button" id="italic"><i class="fa fa-italic"></i></button>
-                        <button type="button" id="underline"><i class="fa fa-underline"></i></button>
-                        <button type="button" id="strikethrough"><i class="fa fa-strikethrough"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="justifyleft"><i class="fa fa-align-left"></i></button>
-                        <button type="button" id="justifycenter"><i class="fa fa-align-center"></i></button>
-                        <button type="button" id="justifyright"><i class="fa fa-align-right"></i></button>
-                        <button type="button" id="justifyfull"><i class="fa fa-align-justify"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="insertunorderedlist"><i class="fa fa-list-ul"></i></button>
-                        <button type="button" id="insertorderedlist"><i class="fa fa-list-ol"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="indent"><i class="fa fa-indent"></i></button>
-                        <button type="button" id="outdent"><i class="fa fa-outdent"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="undo"><i class="fa fa-undo"></i></button>
-                        <button type="button" id="redo"><i class="fa fa-undo"></i></button>
-                        <button type="button" id="delete"><i class="fa fa-eraser"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="createLink"><i class="fa fa-link"></i></button>
-                        <button type="button" id="insertImage"><i class="fa fa-picture-o"></i></button>
-                    </div>
-                    <div class="bouton-groupe">
-                        <button type="button" id="forecolor"><i class="fa fa-tint"></i></button>
-                    </div>
+        <h1>Newsletter</h1>
+        <form action="#">
+            <fieldset class="destinataire">
+                <legend>Créer une liste de destinataires :</legend>
+                <p><label for="activite" class="custom-select">Par activité :</label></p>
+                <div class="petitefleche">
+                    <select name="activite" id="activite" required>
+                        <option value=""></option>
+                        <optgroup label="Bien-être">
+                            <option value="fleursdepeau">A Fleurs de Peau</option>
+                            <option value="hearfulness">Heartfulness</option>
+                            <option value="naturopathie">Naturopathie</option>
+                            <option value="yoga">Yoga</option>
+                        </optgroup>
+                        <optgroup label="Danse">
+                            <option value="claquettes">Claquettes américaines</option>
+                            <option value="breakdance">Breakdance</option>
+                            <option value="bollywood">Danse Bollywood</option>
+                            <option value="classique">Danse Classique & Jazz</option>
+                            <option value="flamenca">Danse Flamenca</option>
+                            <option value="hiphop">Danse Hip Hop</option>
+                            <option value="orientales">Danses Orientales</option>
+                            <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
+                            <option value="polynesienne">Danse Polynésienne</option>
+                            <option value="kids">Kids Danse (Regaeton)</option>
+                            <option value="tango">Tango Argentin</option>
+                            <option value="salsa">Salsa-Kizumba Batchata</option>
+                        </optgroup>
+                        <optgroup label="Lien Social">
+                            <option value="numeriques">Ateliers numériques</option>
+                            <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
+                            <option value="emploi">Un accompagnement vers l'emploi</option>
+                        </optgroup>
+                        <optgroup label="Musique">
+                            <option value="arpege">Arpèges Fleuis</option>
+                            <option value="chantespagnol">Atelier Chant Espagnol</option>
+                            <option value="chantafricain">Chant Africain</option>
+                            <option value="gospel">Chorale Gospel Évidence</option>
+                            <option value="apaulhom">Chorale Homme Apaul'hom</option>
+                            <option value="guitare">Guitare</option>
+                        </optgroup>
+                        <optgroup label="Sport">
+                            <option value="aquabike">Aquabike</option>
+                            <option value="aquagym">Aquagym</option>
+                            <option value="boxe">Boxe Educative Kick-Boxing</option>
+                            <option value="capoiera">Capoiera</option>
+                            <option value="cheerleading">Cheerleading</option>
+                            <option value="gymcardio">Gym Cardio / Insanity</option>
+                            <option value="gymsouplesse">Gym souplesse</option>
+                            <option value="gymfeminine">Gymnastique féminine</option>
+                            <option value="gymentretien">Gymnastique d'entretien</option>
+                            <option value="montagne">Montagne</option>
+                            <option value="musculation">Musculation</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="stretching">Stretching postural</option>
+                            <option value="volleyball">Volleyball</option>
+                        </optgroup>
+                    </select>
                 </div>
-                <div class="editeur" contentEditable></div>
-                <div class="htmlview"></div>
+
+                <p><label for="evenement">Par évènement :</label></p>
+                <div class="petitefleche">
+                    <select name="evenement" id="evenement" required>
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <p><label for="age">Par tranche d'âge :</label></p>
+                <div class="petitefleche">
+                    <select name="age" id="age" required>
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <p><label for="import">Importer une liste :</label></p>
+                <label for="import" class="machin"><span class="file"></span></label>
+                <input type="file" name="import" id="import" />
+            </fieldset>
+
+            <fieldset class="expediteur">
+                <legend>Information sur l'expéditeur :</legend>
+                <p><label for="nom">Nom de l'expediteur :</label></p>
+                <div class="petitefleche">
+                    <select name="nom" id="nom" required>
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <p><label for="email">Email de l'expéditeur :</label></p>
+                <div class="petitefleche">
+                    <select name="email" id="email">
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <p><label for="objet">Object :</label></p>
+                <div class="petitefleche">
+                    <select name="objet" id="objet">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </fieldset>
+            <div id="eg-dark-theme">
+              </div>
+            <div class="button">
+                <input type="submit" value="ENVOYER" class="envoyer" />
+                <button class="historique">HISTORIQUE</button>
             </div>
-        </div>
-        </div>
-        <div class="button">
-        <input type="submit" value="ENVOYER" class="envoyer"/>
-        <button class="historique">HISTORIQUE</button>
-        </div>
-    </form>
+        </form>
 
-    
 
-    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <script src="js/newsletter.js"></script>
+        <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
+
+    </section>
+    <script>
+        // The following function creates a new instance of the Froala Editor and inserts it into the DIV element created above with id="feg-dark-theme"
+  new FroalaEditor('div#eg-dark-theme', {
+        // Set dark theme name.
+        "height": +220,
+      "heightMax": +220,
+      "heightMin": +220,
+      "language": "fr",
+        theme: 'dark',
+        zIndex: 2003
+      })
+</script>
+
+        <script src="js/newsletter.js"></script>
 </body>
 
 </html>
