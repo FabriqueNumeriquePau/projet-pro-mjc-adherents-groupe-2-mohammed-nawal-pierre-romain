@@ -94,33 +94,72 @@ tr:nth-child(odd) {
   visibility: hidden;
 }
 #wrapper-modal #modal {
-  position: absolute;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  top: 50%;
-  left: 50%;
   width: 50%;
   height: 80vh;
-  transform: translate(-50%, -50%);
   padding: 3em;
-  background: #353434;
+  background: #15202B;
   border-radius: 1em;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  align-self: center;
 }
 #wrapper-modal #modal h1 {
   font-size: 2em;
-}
-#wrapper-modal #modal .form-adherents {
-  height: 60%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  white-space: pre-line;
-}
-#wrapper-modal #modal .form-adherents p {
   text-align: left;
 }
+#wrapper-modal #modal .form-adherents {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: 8em;
+  white-space: pre-line;
+  text-align: left;
+}
+#wrapper-modal #modal .form-adherents label {
+  font-size: 1.2em;
+}
+#wrapper-modal #modal .form-adherents input, #wrapper-modal #modal .form-adherents select {
+  color: white;
+  background-color: #585656;
+  border-radius: 1em;
+  outline-style: none;
+  border: none;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+  cursor: pointer;
+}
+#wrapper-modal #modal .form-adherents input::placeholder, #wrapper-modal #modal .form-adherents select::placeholder {
+  color: white;
+}
 #wrapper-modal #modal #adherent-btn {
-  align-self: baseline;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#wrapper-modal #modal #adherent-btn #add {
+  outline-style: none;
+  border: none;
+  border-radius: 1.1em;
+  color: white;
+  margin-left: 1em;
+  font-size: 1.2em;
+  padding: 0.4em;
+  cursor: pointer;
+  border-bottom: 2px solid #303030;
+  background: #3dafbe;
+}
+#wrapper-modal #modal #adherent-btn #cancel {
+  outline-style: none;
+  border: none;
+  border-radius: 1.1em;
+  color: white;
+  margin-left: 1em;
+  font-size: 1.2em;
+  padding: 0.4em;
+  cursor: pointer;
+  border-bottom: 2px solid #303030;
+  background: #972424;
 }

@@ -1,3 +1,20 @@
+@mixin boutons {
+    outline-style: none;
+    border: none;
+    border-radius: 1.1em;
+    color: white;
+    margin-left: 1em;
+    font-size: 1.2em;
+    padding: .4em;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+$btn-add:rgb(61, 175, 190);
+$btn-cancel: rgb(151, 36, 36);
+
+
+
 section {
     width: 100%;
     height: 85vh;
@@ -30,15 +47,7 @@ section {
 
 
             button {
-                outline-style: none;
-                border: none;
-                border-radius: 1.1em;
-                color: white;
-                margin-left: 1em;
-                font-size: 1.2em;
-                padding: .4em;
-                cursor: pointer;
-                border-bottom: 2px solid rgb(48, 48, 48);
+              @include boutons;
 
                 &:active {
                     border-bottom: 1px solid white;
@@ -63,7 +72,7 @@ section {
 
     .wrapper {
         overflow-y: scroll;
-        
+
 
         table {
             width: 250vw;
@@ -118,50 +127,71 @@ tr:nth-child(odd) {
     transition: opacity 400ms ease-in;
     opacity: 0;
     visibility: hidden;
-    
+
     #modal {
-      position: absolute;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        top: 50%;
-        left: 50%;
         width: 50%;
         height: 80vh;
-        transform: translate(-50%, -50%);
         padding: 3em;
-        background: rgb(53, 52, 52);
+        background:  #15202B;
         border-radius: 1em;
-    
-        
+        display: grid;
+        grid-template-rows: 1fr 5fr 1fr;
+        align-self: center;
+
+
         h1 {
             font-size: 2em;
+            text-align: left;
         }
 
 
         .form-adherents {
-            height: 60%;
+            height: 100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-        
+            grid-template-rows: repeat(8, 1fr);
             // transform: translateX(15%);
+            column-gap: 8em;
             white-space: pre-line;
-            
-            
-            p {
-             
-                text-align: left;
+            text-align: left;
+          
+
+            label{
+                font-size: 1.2em;
             }
-
+            input, select{
+                color: white;
+                background-color:rgb(88, 86, 86) ;
+                border-radius: 1em;
+                outline-style: none;
+                border: none;
+                width: 100%;
+                padding : 0.3em;
+                font-size: 1em;
+                cursor: pointer;
+                
+                &::placeholder{
+                    color: white;
+                }
+            }
+           
         }
-        #adherent-btn{
-            align-self: baseline;
+        #adherent-btn {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            
+            #add{
+                @include boutons;
+              
+              background: $btn-add;
+            }
+            #cancel{
+                @include boutons;
+                background: $btn-cancel;
+            }
         }
-
-
-
 
     }
 }

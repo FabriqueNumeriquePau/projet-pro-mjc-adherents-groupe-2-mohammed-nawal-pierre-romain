@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tableaux.css">
+    <link rel="stylesheet" href="../structure/css/structure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Événements</title>
+</head>
+
+<body>
+    <header>
+        <img src="../logoMjc.png" alt="">
+        <div class="search">
+            <input search="text" placeholder="Rechercher">
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i><span class="fa-home">Tableau de Bord</span></a></li>
+                <li><a href=""><i class="fas fa-users"></i><span class="fa-users">Adhérents</span></a></li>
+                <li><a href=""><i class="far fa-handshake"></i><span class="fa-handshake">Partenaires</span></a></li>
+                <li><a href=""><i class="fas fa-running"></i><span class="fa-running">Activités</span></a></li>
+                <li><a href=""><i class="fas fa-microphone"></i><span class="fa-microphone">Événements</span></a></li>
+                <li><a href=""><i class="far fa-envelope"></i><span class="fa-envelope">Statistiques</span></a></li>
+                <li><a href=""><i class="far fa-file-excel"></i><span class="fa-file-excel">Import/Excel</span></a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i><span class="fa-user-plus">Permissions</span></a></li>
+                <li><a href=""><i class="fas fa-chart-area"></i><span class="fa-chart-area">Newsletters</span></a></li>
+            </ul>
+        </nav>
+        <section>
+            <header id="sous-header">
+                <h1>Événements</h1>
+                <div class="nouveau">
+                    <button id="ajouter">Ajouter</button>
+                    <button id="supprimer">Supprimer</button>
+                </div>
+            </header>
+            <div class="wrapper">
+                <!-- entete -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAll">
+                                    <label for="selectAll"></label>
+                                </span>
+
+                            </th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Identifiant</th>
+                            <th>Sécurité sociale</th>
+                            <th>Date de naissance</th>
+                            <th>Adresse</th>
+                            <th>Téléphone</th>
+                            <th>Email</th>
+                            <th>Activités</th>
+                            <th>Profession</th>
+                            <th>Type de compte</th>
+                            <th>Solde</th>
+                            <th>Statut inscription</th>
+                            <th>Compte lié</th>
+                            <th>Quartier</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <!-- "tableau" -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Romain </td>
+                            <td>Pierre</td>
+                            <td>09876567</td>
+                            <td>Régime général</td>
+                            <td>22/08/1990</td>
+                            <td>Route de Pau</td>
+                            <td>0677000000</td>
+                            <td>eme@mail.com</td>
+                            <td>Danse</td>
+                            <td>Salarié</td>
+                            <td>Adhérent</td>
+                            <td>0€</td>
+                            <td>Validée</td>
+                            <td>Aucun</td>
+                            <td>Buros</td>
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <section id="wrapper-modal">
+        <article id="modal">
+            <h1>Création d'un compte adhérant :</h1>
+            <form class="form-adherents" action="#">
+                <p><label for="name">Nom :</label>
+                    <input type="text" name="name" id="name" autocapitalize="words" required>
+                </p>
+                <p><label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" autocapitalize="words" required>
+                </p>
+
+                <p><label for="identifiant">Identifiant :</label>
+                    <input type="text" name="identifiant" id="identifiant" required>
+                </p>
+
+                <p><label for="securite">Sécurité :</label>
+                    <select name="securite" id="securite" required>
+                        <option value="">Choisir une option</option>
+                        <option value="general">Général</option>
+                    </select>
+                </p>
+
+                <p><label for="datenaissance">Date de Naissance</label>
+                    <input type="date" name="datenaissance" id="datenaissance" required>
+                </p>
+
+                <p><label for="adresse">Adresse :</label>
+                    <input type="text" name="adresse" id="adresse"
+                        placeholder=" Ex : 1 allée des Hirondelles, 61000 Lons" required>
+                </p>
+
+                <p><label for="telephone">Téléphone :</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Ex : 07XXXXXX76" pattern="[0-9]{10}"
+                        required>
+                </p>
+
+                <p><label for="email">Email :</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+                <p><label for="activite">Activité :</label>
+                    <select name="activite" id="activite" required>
+                        <option value="">Choisir une option</option>
+                        <optgroup label="Bien-être">
+                            <option value="fleursdepeau">A Fleurs de Peau</option>
+                            <option value="hearfulness">Heartfulness</option>
+                            <option value="naturopathie">Naturopathie</option>
+                            <option value="yoga">Yoga</option>
+                        </optgroup>
+                        <optgroup label="Danse">
+                            <option value="claquettes">Claquettes américaines</option>
+                            <option value="breakdance">Breakdance</option>
+                            <option value="bollywood">Danse Bollywood</option>
+                            <option value="classique">Danse Classique & Jazz</option>
+                            <option value="flamenca">Danse Flamenca</option>
+                            <option value="hiphop">Danse Hip Hop</option>
+                            <option value="orientales">Danses Orientales</option>
+                            <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
+                            <option value="polynesienne">Danse Polynésienne</option>
+                            <option value="kids">Kids Danse (Regaeton)</option>
+                            <option value="tango">Tango Argentin</option>
+                            <option value="salsa">Salsa-Kizumba Batchata</option>
+                        </optgroup>
+                        <optgroup label="Lien Social">
+                            <option value="numeriques">Ateliers numériques</option>
+                            <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
+                            <option value="emploi">Un accompagnement vers l'emploi</option>
+                        </optgroup>
+                        <optgroup label="Musique">
+                            <option value="arpege">Arpèges Fleuis</option>
+                            <option value="chantespagnol">Atelier Chant Espagnol</option>
+                            <option value="chantafricain">Chant Africain</option>
+                            <option value="gospel">Chorale Gospel Évidence</option>
+                            <option value="apaulhom">Chorale Homme Apaul'hom</option>
+                            <option value="guitare">Guitare</option>
+                        </optgroup>
+                        <optgroup label="Sport">
+                            <option value="aquabike">Aquabike</option>
+                            <option value="aquagym">Aquagym</option>
+                            <option value="boxe">Boxe Educative Kick-Boxing</option>
+                            <option value="capoiera">Capoiera</option>
+                            <option value="cheerleading">Cheerleading</option>
+                            <option value="gymcardio">Gym Cardio / Insanity</option>
+                            <option value="gymsouplesse">Gym souplesse</option>
+                            <option value="gymfeminine">Gymnastique féminine</option>
+                            <option value="gymentretien">Gymnastique d'entretien</option>
+                            <option value="montagne">Montagne</option>
+                            <option value="musculation">Musculation</option>
+                            <option value="pilates">Pilates</option>
+                            <option value="stretching">Stretching postural</option>
+                            <option value="volleyball">Volleyball</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p><label for="profession">Professsion :</label>
+                    <select name="profession" id="profession" required>
+                        <option value="">Choisir une option</option>
+                        <option value="emploi">Salarié</option>
+                        <option value="emploi">Ingénieur</option>
+                        <option value="emploi">Sans Emploi</option>
+                        <option value="emploi">Profession Libérale</option>
+                    </select>
+                </p>
+
+                <p><label for="compte">Type de compte :</label>
+                    <select name="compte" id="compte" required>
+                        <option value="">Choisir une option</option>
+                        <option value="enfant">Enfant</option>
+                        <option value="adulte">Adulte</option>
+                    </select>
+                </p>
+
+                <p><label for="">Solde :</label>
+                    <input type="text" name="solde">
+                </p>
+
+                <p><label for="paiement">Statut de paiement :</label>
+                    <select name="paiement" id="paiement" required>
+                        <option value="">Choisir une option</option>
+                        <option value="enfant">Payé</option>
+                        <option value="adulte">En attente</option>
+                    </select>
+                </p>
+
+                <p><label for="">Compte lié :</label>
+                    <input type="text" name="" required>
+                </p>
+
+                <p><label for="quartier">Quartier :</label>
+                    <select name="quartier" id="quartier" required>
+                        <option value="">Choisir une option</option>
+                        <option value="agglo">Agglo</option>
+                        <option value="autrespau">Autres Pau</option>
+                        <option value="hameau">Hameau</option>
+                        <option value="saragosse">Saragosse</option>
+                    </select>
+                </p>
+                <p>
+                </p>
+            </form>
+            <div id="adherent-btn">
+                <button type="submit" value="ajouter" id="add">Ajouter</button>
+                <button type="submit" value="annuler" id="cancel">Annuler</button>
+            </div>
+        </article>
+    </section>
+
+
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2021 - TOUS DROITS RÉSERVÉS</i></footer>
+
+    <script src="./tableaux.js"></script>
+</body>
+
+
+</html>
