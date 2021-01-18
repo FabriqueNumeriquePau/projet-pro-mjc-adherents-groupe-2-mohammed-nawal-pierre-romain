@@ -63,6 +63,7 @@ section {
 
     .wrapper {
         overflow-y: scroll;
+        
 
         table {
             width: 250vw;
@@ -105,30 +106,35 @@ tr:nth-child(odd) {
 
 
 /*---------------------modal-----------------------*/
-.wrapper-modal {
-    // top: 0;
-    // left: 0;
-    margin: 0;
+#wrapper-modal {
     position: absolute;
-    z-index: 10;
-    background: #15202bb2;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    // opacity: 0;
-    // visibility: hidden;
-
+    margin: 0;
+    z-index: 10;
+    background: #15202bb2;
+    transition: opacity 400ms ease-in;
+    opacity: 0;
+    visibility: hidden;
+    
     #modal {
-      
+      position: absolute;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 50%;
+        left: 50%;
         width: 50%;
         height: 80vh;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -60%);
+        transform: translate(-50%, -50%);
         padding: 3em;
         background: rgb(53, 52, 52);
         border-radius: 1em;
-
+    
+        
         h1 {
             font-size: 2em;
         }
@@ -138,8 +144,8 @@ tr:nth-child(odd) {
             height: 60%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(8, 1fr);
-            white-space: pre;
+            grid-template-rows: repeat(10, 1fr);
+        
             // transform: translateX(15%);
             white-space: pre-line;
             
@@ -149,6 +155,9 @@ tr:nth-child(odd) {
                 text-align: left;
             }
 
+        }
+        #adherent-btn{
+            align-self: baseline;
         }
 
 

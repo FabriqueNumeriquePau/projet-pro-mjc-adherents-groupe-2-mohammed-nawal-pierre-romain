@@ -80,33 +80,47 @@ tr:nth-child(odd) {
 }
 
 /*---------------------modal-----------------------*/
-.wrapper-modal {
-  margin: 0;
+#wrapper-modal {
   position: absolute;
-  z-index: 10;
-  background: #15202bb2;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  z-index: 10;
+  background: #15202bb2;
+  transition: opacity 400ms ease-in;
+  opacity: 0;
+  visibility: hidden;
 }
-.wrapper-modal #modal {
+#wrapper-modal #modal {
+  position: absolute;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 50%;
+  left: 50%;
   width: 50%;
   height: 80vh;
+  transform: translate(-50%, -50%);
   padding: 3em;
   background: #353434;
   border-radius: 1em;
 }
-.wrapper-modal #modal h1 {
+#wrapper-modal #modal h1 {
   font-size: 2em;
 }
-.wrapper-modal #modal .form-adherents {
+#wrapper-modal #modal .form-adherents {
   height: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  white-space: pre;
+  grid-template-rows: repeat(10, 1fr);
   white-space: pre-line;
 }
-.wrapper-modal #modal .form-adherents p {
+#wrapper-modal #modal .form-adherents p {
   text-align: left;
+}
+#wrapper-modal #modal #adherent-btn {
+  align-self: baseline;
 }
