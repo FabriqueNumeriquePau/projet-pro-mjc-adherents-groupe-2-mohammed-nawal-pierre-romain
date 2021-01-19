@@ -1,0 +1,197 @@
+@mixin boutons {
+    outline-style: none;
+    border: none;
+    border-radius: 1.1em;
+    color: white;
+    margin-left: 1em;
+    font-size: 1.2em;
+    padding: .4em;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
+
+$btn-add:rgb(61, 175, 190);
+$btn-cancel: rgb(151, 36, 36);
+
+
+
+section {
+    width: 100%;
+    height: 85vh;
+    margin-left: 6vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    #sous-header {
+        background: #15202B;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        align-items: center;
+
+        h1 {
+            // text-align: center;
+            margin-left: 45%;
+
+        }
+
+        .nouveau {
+            width: 20%;
+
+            // margin-left: 27%;
+
+
+            button {
+              @include boutons;
+
+                &:active {
+                    border-bottom: 1px solid white;
+                }
+
+            }
+
+            #ajouter {
+                background-color: rgb(61, 175, 190);
+            }
+
+            #supprimer {
+                background-color: rgb(151, 36, 36);
+            }
+
+        }
+
+
+    }
+
+    /*----------tableau-----------------*/
+
+    .wrapper {
+        overflow-y: scroll;
+
+
+        table {
+            width: 250vw;
+            table-layout: fixed;
+            text-align: center;
+            white-space: nowrap;
+            border-collapse: collapse;
+
+            tr {
+                padding: 2em;
+            }
+
+            thead,
+            th {
+
+                background: #2E3438;
+                height: 4em;
+                position: sticky;
+                top: 0;
+            }
+        }
+    }
+}
+
+tr:nth-child(even) {
+    background: rgb(114, 113, 113)
+}
+
+
+
+tr:nth-child(odd) {
+    background: #525B63
+}
+
+.tableau tr:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+/*---------------------modal-----------------------*/
+#wrapper-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 10;
+    background: #15202bb2;
+    transition: opacity 400ms ease-in;
+    opacity: 0;
+    visibility: hidden;
+
+    #modal {
+        margin: auto;
+        width: 50%;
+        height: 80vh;
+        padding: 3em;
+        background:  #15202B;
+        border-radius: 1em;
+        display: grid;
+        grid-template-rows: 1fr 5fr 1fr;
+        align-self: center;
+
+
+        h1 {
+            font-size: 2em;
+            text-align: left;
+        }
+
+
+        .form-adherents {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            // transform: translateX(15%);
+            column-gap: 8em;
+            white-space: pre-line;
+            text-align: left;
+          
+
+            label{
+                font-size: 1.2em;
+            }
+            input, select{
+                color: white;
+                background-color:rgb(88, 86, 86) ;
+                border-radius: 1em;
+                outline-style: none;
+                border: none;
+                width: 100%;
+                padding : 0.3em;
+                font-size: 1em;
+                cursor: pointer;
+                
+                &::placeholder{
+                    color: white;
+                }
+            }
+           
+        }
+        #adherent-btn {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            
+            #add{
+                @include boutons;
+              
+              background: $btn-add;
+            }
+            #cancel{
+                @include boutons;
+                background: $btn-cancel;
+            }
+        }
+
+    }
+}

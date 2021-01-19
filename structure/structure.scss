@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 
 
 
@@ -31,20 +33,22 @@ header {
         align-self: center;
 
         input {
+            border: none;
             border-radius: 1em 0 0 1em;
             width: 31em;
             height: 2.5em;
             align-self: center;
             outline-style: none;
+            background-color: #2C2F33;
 
 
             &:focus {
-                color: black;
+                color: rgb(252, 247, 247);
 
             }
 
             &::placeholder {
-                color: rgb(148, 145, 145);
+                color: rgb(252, 247, 247);
                 font-size: 18px;
             }
 
@@ -58,7 +62,7 @@ header {
             width: 4em;
             height: 1.79em;
             border-bottom: 3px solid white;
-            background: #00B4CC;
+            background: #C4C4C4;
             text-align: center;
             color: #fff;
             border-radius: 0 1em 1em 0;
@@ -110,7 +114,7 @@ header {
         outline-style: none;
         border: none;
         border-bottom: 3px solid white;
-        background-color: rgb(48, 165, 159);
+        background-color: $primary-color;
         cursor: pointer;
 
         &:active {
@@ -131,34 +135,38 @@ main {
 
 
     nav {
-        position: absolute;
-        background-color: $primary-color;
-        
+        position: fixed;
+        width: 5vw;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-       
+        background-color: $primary-color;
+        overflow: hidden;
+        transition: width 600ms ease;
+        cursor: pointer;
         z-index: 2;
         
-        &:hover span {
-            transition: all .5s ease-in-out;
+        &:hover {
             width: 20vw;
-            display: inline;
+       
            
 
         }
 
         ul {
-            margin: 0;
             padding: 0;
+            margin: 1em 0 0 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
                  
 
 
 
             li {
 
-                list-style: none;
-                margin-top: 1em;
+                display: flex;
+                align-items: center;
+                width: 100%;
 
                 a {
 
@@ -166,18 +174,21 @@ main {
                     color: white;
                     display: flex;
                     align-items: center;
+                    height: 5rem;
 
                     span {
                         margin-left: 1.2em;
                         font-size: 2em;
                         white-space: nowrap;
-                        display: none;
+                       text-align: center;
                     }
 
                     i {
-                        width: 2em;
+                        width: 6rem;
                         text-align: center;
                         font-size: 3em;
+                  
+
                     }
                 }
 

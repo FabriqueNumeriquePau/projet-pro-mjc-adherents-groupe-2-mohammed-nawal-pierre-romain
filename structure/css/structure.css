@@ -6,6 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 header {
@@ -25,17 +27,19 @@ header .search {
   align-self: center;
 }
 header .search input {
+  border: none;
   border-radius: 1em 0 0 1em;
   width: 31em;
   height: 2.5em;
   align-self: center;
   outline-style: none;
+  background-color: #2C2F33;
 }
 header .search input:focus {
-  color: black;
+  color: #fcf7f7;
 }
 header .search input::placeholder {
-  color: #949191;
+  color: #fcf7f7;
   font-size: 18px;
 }
 header .search .submit {
@@ -43,7 +47,7 @@ header .search .submit {
   width: 4em;
   height: 1.79em;
   border-bottom: 3px solid white;
-  background: #00B4CC;
+  background: #C4C4C4;
   text-align: center;
   color: #fff;
   border-radius: 0 1em 1em 0;
@@ -81,7 +85,7 @@ header .sign_out {
   outline-style: none;
   border: none;
   border-bottom: 3px solid white;
-  background-color: #30a59f;
+  background-color: #2B3D50;
   cursor: pointer;
 }
 header .sign_out:active {
@@ -97,40 +101,46 @@ main {
   flex-direction: row;
 }
 main nav {
-  position: absolute;
-  background-color: #2B3D50;
+  position: fixed;
+  width: 5vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-color: #2B3D50;
+  overflow: hidden;
+  transition: width 600ms ease;
+  cursor: pointer;
   z-index: 2;
 }
-main nav:hover span {
-  transition: all 0.5s ease-in-out;
+main nav:hover {
   width: 20vw;
-  display: inline;
 }
 main nav ul {
-  margin: 0;
   padding: 0;
+  margin: 1em 0 0 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 main nav ul li {
-  list-style: none;
-  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 main nav ul li a {
   text-decoration: none;
   color: white;
   display: flex;
   align-items: center;
+  height: 5rem;
 }
 main nav ul li a span {
   margin-left: 1.2em;
   font-size: 2em;
   white-space: nowrap;
-  display: none;
+  text-align: center;
 }
 main nav ul li a i {
-  width: 2em;
+  width: 6rem;
   text-align: center;
   font-size: 3em;
 }
