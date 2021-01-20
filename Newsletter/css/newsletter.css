@@ -6,9 +6,13 @@ body{
 /*****************************************
                   Body
 *****************************************/
+section{
+  margin-left: 5vw;
+}
+
 h1{
   color: white;
-  margin-left: 3em;
+  margin-left: 3vw;
   margin-top: 3vh;
   font-size: 3vw;
 }
@@ -51,7 +55,7 @@ select{
   border-radius: 8px;
   color: white;
   width: 50vw;
-  height: 2.8vw;
+  height: 1.5vw;
 }
 
 select {
