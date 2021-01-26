@@ -13,7 +13,8 @@
 
 <body>
 
-    <main>
+    <main id="choix">
+
         <section>
             <img src="/logoMjc.png" alt="MJCDESFLEURS">
             <h1>Inscription</h1>
@@ -25,16 +26,75 @@
                         <option value="adherent">Devenir adhérent</option>
                         <option value="evenement">Participer à un événements</option>
                         <option value="enfant">Inscrire mon enfant</option>
-
                     </select>
                 </div>
             </article>
+            <button type="button" type="submit">ENTRER</button>
         </section>
     </main>
 
+    <main id="choix_adherent">
+        <section>
+            <img src="/logoMjc.png" alt="MJCDESFLEURS">
+            <svg width="136" height="51" viewBox="0 0 136 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="31" y="3.99902" width="72" height="42" fill="#FF4C4C" />
+                <path
+                    d="M88.7322 25.6656C89.3327 26.0606 89.3327 26.9413 88.7322 27.3364L59.3016 46.6991C58.6366 47.1366 57.752 46.6596 57.752 45.8637V7.13828C57.752 6.34234 58.6366 5.8654 59.3016 6.30287L88.7322 25.6656Z"
+                    fill="#222528" />
+                <path
+                    d="M133.732 24.6646C134.333 25.0597 134.333 25.9403 133.732 26.3354L104.302 45.6981C103.637 46.1356 102.752 45.6586 102.752 44.8627V6.1373C102.752 5.34136 103.637 4.86442 104.302 5.30189L133.732 24.6646Z"
+                    fill="#FF4C4C" />
+                <path d="M11 8C11 5.79086 12.7909 4 15 4H58V47H15C12.7909 47 11 45.2091 11 43V8Z" fill="#222528" />
+                <path
+                    d="M42.7256 24.1639C43.3275 24.5588 43.3275 25.4412 42.7256 25.8361L12.5486 45.6347C11.8835 46.071 11 45.5939 11 44.7985V5.20145C11 4.40609 11.8835 3.92904 12.5486 4.36534L42.7256 24.1639Z"
+                    fill="#2F3337" />
+            </svg>
+            <h1>Inscription</h1>
+            <article>
+                <label for="inscription">Civilité</label>
+                <div id="arrow">
+                    <select name="inscription" id="inscription">
+                        <option value="">--Choisir une option--</option>
+                        <option value="madame">Madame</option>
+                        <option value="monsieur">Monsieur</option>
+                    </select>
+                </div>
+                <form class="form-adherents" action="#">
+                    <p><label for="name">Nom :</label>
+                        <input type="text" name="name" id="name" autocapitalize="words" required>
+                    </p>
+                    <p><label for="prenom">Prénom : </label>
+                        <input type="text" name="prenom" id="prenom" autocapitalize="words" required>
+                    </p>
+
+                    <p><label for="adresse">Adresse :</label>
+                        <input type="text" name="adresse" id="adresse"
+                            placeholder=" Ex : 1 allée des Hirondelles, 61000 Lons" required>
+                    </p>
+
+
+                    <p><label for="telephone">Téléphone :</label>
+                        <input type="tel" name="telephone" id="telephone" placeholder="Ex : 07XXXXXX76"
+                            pattern="[0-9]{10}" required>
+                    </p>
+                    <p><label for="datenaissance">Date de Naissance</label>
+                        <input type="date" name="datenaissance" id="datenaissance" required>
+                    </p>
+
+                    <p><label for="motDePasse">Mot de passe :</label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+                </form>
+            </article>
+            <div id="btn-poursuivre">
+                <button type="button" type="reset">Annuler</button>
+                <button type="button" type="submit">Poursuivre</button>
+            </div>
+        </section>
+
+
+    </main>
     <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
-
-
 </body>
 
 </html>
