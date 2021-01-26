@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/inscription_enfant.css">
+    <link rel="stylesheet" href="css/inscription_enfant3.css">
     <title>Inscription enfant</title>
 </head>
 
@@ -24,43 +24,59 @@
             <path
                 d="M134.732 23.6646C135.333 24.0597 135.333 24.9403 134.732 25.3354L105.302 44.6981C104.637 45.1356 103.752 44.6586 103.752 43.8627V5.1373C103.752 4.34136 104.637 3.86442 105.302 4.30189L134.732 23.6646Z"
                 fill="#1B1F24" />
-            <path d="M12 8C12 5.79086 13.7909 4 16 4H59V46H16C13.7909 46 12 44.2091 12 42V8Z" fill="#5767F5" />
+            <path 
+                d="M12 8C12 5.79086 13.7909 4 16 4H59V46H16C13.7909 46 12 44.2091 12 42V8Z" fill="#5767F5" />
             <path
                 d="M42.7256 24.1639C43.3275 24.5588 43.3275 25.4412 42.7256 25.8361L12.5486 45.6347C11.8835 46.071 11 45.5939 11 44.7985V5.20145C11 4.40609 11.8835 3.92904 12.5486 4.36534L42.7256 24.1639Z"
                 fill="#2F3337" />
         </svg>
         <form action="#" method="#">
-            <p><label for="civilite">Civilité :</label>
-                <select class="select" name="civilite" class="input" required>
-                    <option value="mr">Monsieur</option>
-                    <option value="mme">Madame</option>
-                </select>
-            </p>
-            <p><label for="name">Nom :</label>
+            <p>
+                <label for="name">Nom :</label>
                 <input type="text" name="name" class="input" required>
             </p>
-            <p><label for="prenom">Prénom :</label>
+            <p>
+                <label for="prenom">Prénom :</label>
                 <input type="text" name="prenom" class="input" required>
             </p>
-            <p><label for="date">Date de naissance :</label>
-                <input type="date" name="date" class="input" required>
-            </p>
-            <p><label for="adresse">Adresse :</label>
+            <p id="adresse"><label for="adresse">Adresse :</label>
                 <input type="text" name="adresse" class="input" autocapitalize="words" required>
             </p>
-            <p><label for="identifiant">Établissement scolaire :</label>
-                <input type="text" name="ecole" class="input" required>
+            <p>
+                <label for="telephone">Téléphone Domicile :</label>
+                <input type="tel" class="input" name="telephone" pattern="[0-9]{10}" required>
             </p>
-            <p><label for="name">Nom d'utilisateur :</label>
-                <input type="text" name="user" class="input" required>
+            <p>
+                <label for="telephone">Téléphone Portable :</label>
+                <input class="input" type="tel" name="telephone" pattern="[0-9]{10}" required>
             </p>
-            <p><label for="prenom">Mot de passe :</label>
-                <input type="text" name="mdp" class="input" required>
+            <p>
+                <label for="secu">N° Sécurité Sociale :</label>
+                <input type="text" name="secu" class="input" required>
             </p>
+            <p>
+                <label for="caf">N° Allocataire CAF :</label>
+                <input type="text" name="caf" class="input" required>
+            </p>
+            <p>
+                <label for="email">Email :</label>
+                <input class="input" type="email" name="email" id="email" required>
+            </p>
+            <div class="image">
+                <label id="label" for="image">DROIT À L'IMAGE ?</label>
+                <div class="droit">
+                    <input type="radio" name="image" required>
+                    <label for="image">J'autorise</label>
+                </div>
+                <div class="droit">
+                    <input type="radio" name="image" required>
+                    <label for="image">Je refuse</label>
+                </div>
+            </div>
         </form>
-        <div>
-            <button class="annuler" type="button"> <a href="#">ANNULER</a></button>
-            <button class="poursuivre" type="submit" value="poursuivre">POURSUIVRE</button>
+        <div class="boutons">
+            <button class="annuler" type="button"> <a href="#">RETOUR</a></button>
+            <button class="poursuivre" type="submit" value="poursuivre">S'INSCRIRE</button>
         </div>
     </main>
     <footer>
