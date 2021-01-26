@@ -14,6 +14,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 20vw 60vw 15vw 1fr;
+  grid-template-areas: "logo search profil signOut";
   align-items: center;
   width: 100vw;
   height: 10vh;
@@ -23,10 +24,12 @@ header img {
   height: 8vh;
   width: 10vw;
   padding: 1vh;
+  grid-area: logo;
 }
 header .search {
   display: flex;
   align-self: center;
+  grid-area: search;
 }
 header .search input {
   border: none;
@@ -67,6 +70,7 @@ header .profil {
   height: 8vh;
   width: 4vw;
   border-radius: 50%;
+  grid-area: profil;
 }
 header .profil p {
   padding: 1vw 0 0 0;
@@ -84,6 +88,7 @@ header .sign_out {
   background-color: #2B3D50;
   cursor: pointer;
   align-self: stretch;
+  grid-area: signOut;
 }
 header .sign_out:active {
   border-bottom: 1px solid white;

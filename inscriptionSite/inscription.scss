@@ -17,7 +17,9 @@ body {
     background: linear-gradient(145deg, #5d5858, #4e4a4a);
     box-shadow: 5px 5px 10px #232121,
         -10px -10px 15px #302e2e;
-    display: none; // apparition inscription 
+    display: none;
+
+    // apparition inscription 
 
     section {
 
@@ -39,12 +41,9 @@ body {
             align-items: center;
 
             label {
-
-
                 color: white;
                 font-size: 2.2em;
                 float: left;
-
             }
 
 
@@ -60,7 +59,6 @@ body {
                 border-radius: .5em;
                 align-items: center;
                 cursor: pointer;
-
 
 
                 &::after {
@@ -123,7 +121,6 @@ body {
             color: #fff;
             background: linear-gradient(246.39deg, rgba(255, 115, 0, 0.9) 0.79%, rgba(0, 18, 30, 0.9) 97.56%);
             cursor: pointer;
-
         }
     }
 
@@ -164,10 +161,12 @@ body {
             width: 35vw;
             display: flex;
             flex-direction: column;
-            label{
+
+            label {
                 margin-bottom: 1vh;
                 text-align: left;
                 color: white;
+                font-size: 2vh;
             }
 
 
@@ -237,36 +236,58 @@ body {
             }
 
             form {
-                
+
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
                 white-space: pre-line;
                 text-align: left;
-                column-gap: 1.5em;
+                column-gap: 3vw;
 
 
                 p {
+                   
                     
                     label {
-
+                        font-size: 2vh;
+                        text-align: left;
                         color: white;
-                        margin-bottom: 1em;
+                        padding: 1vh;
                     }
+
                     input {
+                        margin-top: .5vh;
                         color: white;
                         background: #2b2c2c;
                         border-radius: 1em;
                         outline-style: none;
                         border: none;
                         width: 100%;
-                        padding : 0.3em;
+                        padding: 0.3em;
                         font-size: 1em;
-                        
+
                     }
                 }
+            }
+        }
 
+        #btn-poursuivre {
+            padding: 1vh;
+            button {
+                padding: 1vh;
+                font-size: 2vh;
+                border-radius: 1vh;
+                outline-style: none;
+                color: #fff;
+                cursor: pointer;
+            }
 
+            button:nth-child(1){
+                background: #000;
+            }
+
+            button:nth-child(2) {
+                background: linear-gradient(246.39deg, rgba(200, 41, 19, 0.9) 0.79%, rgba(0, 18, 30, 0.9) 97.56%);
 
             }
         }
@@ -286,17 +307,17 @@ body {
 
 footer {
     position: fixed;
-    width: 30%;
+    width: 40vw;
     height: 2vh;
     background: #000;
     left: 5%;
     bottom: 0;
-    transform: translateX(100%);
+    transform: translateX(65%);
     color: white;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: rgb(61, 58, 58);
     border-radius: .3em .3em 0 0;
+    white-space: nowrap;
 
     i {
         align-self: center;

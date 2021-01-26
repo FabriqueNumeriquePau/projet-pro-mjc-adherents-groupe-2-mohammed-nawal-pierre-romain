@@ -139,6 +139,7 @@ body {
   margin-bottom: 1vh;
   text-align: left;
   color: white;
+  font-size: 2vh;
 }
 #choix_adherent section article #arrow {
   padding: 0.5em;
@@ -201,13 +202,16 @@ body {
   grid-template-rows: repeat(3, 1fr);
   white-space: pre-line;
   text-align: left;
-  column-gap: 1.5em;
+  column-gap: 3vw;
 }
 #choix_adherent section article form p label {
+  font-size: 2vh;
+  text-align: left;
   color: white;
-  margin-bottom: 1em;
+  padding: 1vh;
 }
 #choix_adherent section article form p input {
+  margin-top: 0.5vh;
   color: white;
   background: #2b2c2c;
   border-radius: 1em;
@@ -217,20 +221,37 @@ body {
   padding: 0.3em;
   font-size: 1em;
 }
+#choix_adherent section #btn-poursuivre {
+  padding: 1vh;
+}
+#choix_adherent section #btn-poursuivre button {
+  padding: 1vh;
+  font-size: 2vh;
+  border-radius: 1vh;
+  outline-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+#choix_adherent section #btn-poursuivre button:nth-child(1) {
+  background: #000;
+}
+#choix_adherent section #btn-poursuivre button:nth-child(2) {
+  background: linear-gradient(246.39deg, rgba(200, 41, 19, 0.9) 0.79%, rgba(0, 18, 30, 0.9) 97.56%);
+}
 
 footer {
   position: fixed;
-  width: 30%;
+  width: 40vw;
   height: 2vh;
   background: #000;
   left: 5%;
   bottom: 0;
-  transform: translateX(100%);
+  transform: translateX(65%);
   color: white;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: #3d3a3a;
   border-radius: 0.3em 0.3em 0 0;
+  white-space: nowrap;
 }
 footer i {
   align-self: center;
