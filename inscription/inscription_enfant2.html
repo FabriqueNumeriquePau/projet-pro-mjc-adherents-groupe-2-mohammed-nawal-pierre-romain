@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inscription_enfant2.css">
+    <title>Inscription enfant</title>
+</head>
+
+<body>
+    <main>
+        <img src="/logoMjc.png" alt="logo mjc">
+        <h1>INSCRIPTION</h1>
+        <svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="91" y="3" width="56" height="42" fill="black" />
+            <rect x="48" y="3" width="56" height="42" fill="#1B1F24" />
+            <path
+                d="M89.7322 24.6656C90.3327 25.0606 90.3327 25.9413 89.7322 26.3364L60.3016 45.6991C59.6366 46.1366 58.752 45.6596 58.752 44.8637V6.13828C58.752 5.34234 59.6366 4.8654 60.3016 5.30287L89.7322 24.6656Z"
+                fill="#5767F5" />
+            <path
+                d="M177.732 23.6646C178.333 24.0597 178.333 24.9403 177.732 25.3354L148.302 44.6981C147.637 45.1356 146.752 44.6586 146.752 43.8627V5.1373C146.752 4.34136 147.637 3.86442 148.302 4.30189L177.732 23.6646Z"
+                fill="black" />
+            <path
+                d="M134.732 23.6646C135.333 24.0597 135.333 24.9403 134.732 25.3354L105.302 44.6981C104.637 45.1356 103.752 44.6586 103.752 43.8627V5.1373C103.752 4.34136 104.637 3.86442 105.302 4.30189L134.732 23.6646Z"
+                fill="#1B1F24" />
+            <path d="M12 8C12 5.79086 13.7909 4 16 4H59V46H16C13.7909 46 12 44.2091 12 42V8Z" fill="#5767F5" />
+            <path
+                d="M42.7256 24.1639C43.3275 24.5588 43.3275 25.4412 42.7256 25.8361L12.5486 45.6347C11.8835 46.071 11 45.5939 11 44.7985V5.20145C11 4.40609 11.8835 3.92904 12.5486 4.36534L42.7256 24.1639Z"
+                fill="#2F3337" />
+        </svg>
+        <form action="#" method="#">
+            <p>
+                <label for="activite">Activités :</label>
+                <select name="activite" id="activite" required>
+                    <option value="">Choisir une option</option>
+                    <optgroup label="Bien-être">
+                        <option value="fleursdepeau">A Fleurs de Peau</option>
+                        <option value="hearfulness">Heartfulness</option>
+                        <option value="naturopathie">Naturopathie</option>
+                        <option value="yoga">Yoga</option>
+                    </optgroup>
+                    <optgroup label="Danse">
+                        <option value="claquettes">Claquettes américaines</option>
+                        <option value="breakdance">Breakdance</option>
+                        <option value="bollywood">Danse Bollywood</option>
+                        <option value="classique">Danse Classique & Jazz</option>
+                        <option value="flamenca">Danse Flamenca</option>
+                        <option value="hiphop">Danse Hip Hop</option>
+                        <option value="orientales">Danses Orientales</option>
+                        <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
+                        <option value="polynesienne">Danse Polynésienne</option>
+                        <option value="kids">Kids Danse (Regaeton)</option>
+                        <option value="tango">Tango Argentin</option>
+                        <option value="salsa">Salsa-Kizumba Batchata</option>
+                    </optgroup>
+                    <optgroup label="Lien Social">
+                        <option value="numeriques">Ateliers numériques</option>
+                        <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
+                        <option value="emploi">Un accompagnement vers l'emploi</option>
+                    </optgroup>
+                    <optgroup label="Musique">
+                        <option value="arpege">Arpèges Fleuis</option>
+                        <option value="chantespagnol">Atelier Chant Espagnol</option>
+                        <option value="chantafricain">Chant Africain</option>
+                        <option value="gospel">Chorale Gospel Évidence</option>
+                        <option value="apaulhom">Chorale Homme Apaul'hom</option>
+                        <option value="guitare">Guitare</option>
+                    </optgroup>
+                    <optgroup label="Sport">
+                        <option value="aquabike">Aquabike</option>
+                        <option value="aquagym">Aquagym</option>
+                        <option value="boxe">Boxe Educative Kick-Boxing</option>
+                        <option value="capoiera">Capoiera</option>
+                        <option value="cheerleading">Cheerleading</option>
+                        <option value="gymcardio">Gym Cardio / Insanity</option>
+                        <option value="gymsouplesse">Gym souplesse</option>
+                        <option value="gymfeminine">Gymnastique féminine</option>
+                        <option value="gymentretien">Gymnastique d'entretien</option>
+                        <option value="montagne">Montagne</option>
+                        <option value="musculation">Musculation</option>
+                        <option value="pilates">Pilates</option>
+                        <option value="stretching">Stretching postural</option>
+                        <option value="volleyball">Volleyball</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="sante">Votre enfant a-t-il des problèmes de santé ?</label>
+                <input type="radio" name="sante" class="input" required>
+                <label for="sante">oui</label>
+                <input type="radio" name="sante" class="input" required>
+                <label for="sante">non</label>
+            </p>
+            <p>
+                <label for="sante">Précisez :</label>
+                <textarea name="precisez" class="input" cols="70" rows="3"></textarea>
+            </p>
+            <p>
+                <label for="vaccins">Votre enfant est-il à jour des vaccins ?</label>
+                <input type="radio" name="vaccins" class="input" required>
+                <label for="sante">oui</label>
+                <input type="radio" name="vaccins" class="input" required>
+                <label for="sante">non</label>
+            </p>
+            <p>
+                <label for="traitement">Actuellement, l'enfant suit-il un traitement ?</label>
+                <input type="radio" name="traitement" class="input" required>
+                <label for="traitement">oui</label>
+                <input type="radio" name="traitement" class="input" required>
+                <label for="traitement">non</label>
+            </p>
+            <p>
+                <label for="traitement">Si oui lequel ?</label>
+               <input class="input" type="text" name="traitement" id="precisez">
+            </p>
+            <p>
+                <label for="reco">Recommandations des parents :</label>
+                <textarea name="reco" class="input" cols="70" rows="3"></textarea>
+            </p>
+        </form>
+        <div>
+            <button class="annuler" type="button"> <a href="#">RETOUR</a></button>
+            <button class="poursuivre" type="submit" value="poursuivre">DERNIÈRE ÉTAPE</button>
+        </div>
+    </main>
+    <footer>
+        © COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS
+    </footer>
+</body>
+
+</html>

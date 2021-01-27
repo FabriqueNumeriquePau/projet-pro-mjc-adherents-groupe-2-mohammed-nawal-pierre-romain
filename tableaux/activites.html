@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tableaux.css">
+    <link rel="stylesheet" href="../structure/css/structure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Activités</title>
+</head>
+
+<body>
+    <header>
+        <img src="../logoMjc.png" alt="">
+        <div class="search">
+            <input search="text" placeholder="Rechercher">
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i><span class="fa-home">Tableau de Bord</span></a></li>
+                <li><a href=""><i class="fas fa-users"></i><span class="fa-users">Adhérents</span></a></li>
+                <li><a href=""><i class="far fa-handshake"></i><span class="fa-handshake">Partenaires</span></a></li>
+                <li><a href=""><i class="fas fa-running"></i><span class="fa-running">Activités</span></a></li>
+                <li><a href=""><i class="fas fa-microphone"></i><span class="fa-microphone">Événements</span></a></li>
+                <li><a href=""><i class="far fa-envelope"></i><span class="fa-envelope">Statistiques</span></a></li>
+                <li><a href=""><i class="far fa-file-excel"></i><span class="fa-file-excel">Import/Excel</span></a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i><span class="fa-user-plus">Permissions</span></a></li>
+                <li><a href=""><i class="fas fa-chart-area"></i><span class="fa-chart-area">Newsletters</span></a></li>
+            </ul>
+        </nav>
+        <section>
+            <header id="sous-header">
+                <h1>Gestion des Activités</h1>
+                <div class="nouveau">
+                    <button id="ajouter">Ajouter</button>
+                    <button id="supprimer">Supprimer</button>
+                </div>
+            </header>
+            <div class="wrapper">
+                <!-- entete -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAll">
+                                    <label for="selectAll"></label>
+                                </span>
+
+                            </th>
+                            <th>Activité</th>
+                            <th>Partenaire</th>
+                            <th>Animateur</th>
+                            <th>Salle/Lieu</th>
+                            <th>Participants</th>
+                            <th>Régularité</th>
+                            <th>Date début</th>
+                            <th>Date fin</th>
+                            <th>Actions</th>
+                            
+                        </tr>
+                    </thead>
+
+                    <!-- "tableau" -->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td>Danse Bollywood </td>
+                            <td>Asso Danse</td>
+                            <td>Romain DC</td>
+                            <td>Salle 2</td>
+                            <td>19</td>
+                            <td>Mardi 18h - 19h</td>
+                            <td>08/09/21</td>
+                            <td>28/06/22</td>
+                            
+                            <td><button type="delete">&#x1F58A;</button>
+                                <button type="delete">&#128465;</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <section id="wrapper-modal">
+        <article id="modal">
+            <h1>Création d'une activité :</h1>
+            <form class="form-adherents" action="#">
+                <p><label for="activite">Nom de l'activité:</label>
+                    <input type="text" name="activite" id="activite" autocapitalize="words" required>
+                </p>
+                <p><label for="partenaire">Partenaire :</label>
+                    <input type="text" name="partenaire" id="prenom" autocapitalize="words" required>
+                </p>
+                <p><label for="animateur">Animateur :</label>
+                    <input type="text" name="animateur" id="animateur" required>
+                </p>
+                <p><label for="salle">Salle ou lieu de l'activité :</label>
+                    <select name="salle" id="salle" required>
+                        <option value="">Choisir une option</option>
+                        <option value="salle1">Salle 1</option>
+                        <option value="salle2">Salle 2</option>
+                        <option value="salle3">Salle 3</option>
+                        <option value="salle3">Salle 4</option>
+                    </select>
+                </p>
+                <p><label for="participants">Nombre de participants (maximum)</label>
+                    <input type="number" name="participants" id="participants" required>
+                </p>
+                <p><label for="regularite">Régularité :</label>
+                    <input type="text" name="regularite" id="regularite" required>
+                </p>
+                <p><label for="debut">Date de début :</label>
+                    <input type="date" name="debut" id="debut" required>
+                </p>
+                <p><label for="fin">Date de fin :</label>
+                    <input type="date" name="fin" id="fin" required>
+                </p>
+            </form>
+            <div id="adherent-btn">
+                <button type="submit" value="ajouter" id="add">Ajouter</button>
+                <button type="submit" value="annuler" id="cancel">Annuler</button>
+            </div>
+        </article>
+    </section>
+
+
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2021 - TOUS DROITS RÉSERVÉS</i></footer>
+
+    <script src="./tableaux.js"></script>
+</body>
+
+
+</html>
