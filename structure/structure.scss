@@ -103,7 +103,10 @@ header {
         
         
         p {
+<<<<<<< HEAD
             padding: 1vw 0 0 0;
+=======
+>>>>>>> Nawal
             color: white;
             font-size: 3vh;
             width: 5vw;
@@ -122,7 +125,11 @@ header {
         border-bottom: 3px solid white;
         background-color: $primary-color;
         cursor: pointer;
+<<<<<<< HEAD
         align-self: stretch;
+=======
+  
+>>>>>>> Nawal
         grid-area: signOut;
 
 
@@ -306,4 +313,8 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #2E3438;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Nawal

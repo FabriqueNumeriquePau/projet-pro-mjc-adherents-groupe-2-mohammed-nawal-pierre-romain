@@ -64,6 +64,10 @@ header .search .submit:active {
   border-bottom: 1px solid white;
 }
 header .profil {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
   background-image: url("/wp2515187-black-panther-animal-wallpapers.jpg");
   background-size: contain;
   background-repeat: no-repeat;

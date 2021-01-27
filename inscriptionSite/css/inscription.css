@@ -1,0 +1,397 @@
+@charset "UTF-8";
+body {
+  background: linear-gradient(246.39deg, rgba(255, 115, 0, 0.9) 0.79%, rgba(0, 18, 30, 0.9) 97.56%), url("/bg.png"), center no-repeat;
+}
+
+#choix {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #3d3a3a;
+  border-radius: 50px;
+  background: #333333;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #5d5858, #4e4a4a);
+  box-shadow: 5px 5px 10px #232121, -10px -10px 15px #302e2e;
+  display: none;
+}
+#choix section {
+  text-align: center;
+}
+#choix section img {
+  width: 150px;
+}
+#choix section h1 {
+  color: white;
+  font-size: 2em;
+}
+#choix section article {
+  display: flex;
+  padding: 2em;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#choix section article label {
+  color: white;
+  font-size: 2.2em;
+  float: left;
+}
+#choix section article #arrow {
+  padding: 0.5em;
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  width: 15vw;
+  height: 3vh;
+  background: #2b2c2c;
+  overflow: hidden;
+  border-radius: 0.5em;
+  align-items: center;
+  cursor: pointer;
+}
+#choix section article #arrow::after {
+  border-radius: 1.2vh;
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em 1em;
+  background: #2b2c2c;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: #f0f0f0;
+  font-size: 15px;
+}
+#choix section article #arrow select {
+  color: white;
+  background-color: #2b2c2c;
+  padding: 1em;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c2c2c;
+  background-image: none;
+  flex: 1;
+  color: #fff;
+  cursor: pointer;
+}
+#choix section article #arrow select::-ms-expand {
+  display: none;
+}
+#choix section article #arrow select option {
+  border-radius: 6em;
+  border: none;
+  outline: none;
+}
+#choix section button {
+  font-size: 1.6em;
+  border-radius: 0.7em;
+  outline-style: none;
+  color: #fff;
+  background: linear-gradient(246.39deg, rgba(255, 115, 0, 0.9) 0.79%, rgba(0, 18, 30, 0.9) 97.56%);
+  cursor: pointer;
+}
+
+#choix_adherent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #3d3a3a;
+  border-radius: 50px;
+  background: #333333;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #5d5858, #4e4a4a);
+  box-shadow: 5px 5px 10px #232121, -10px -10px 15px #302e2e;
+  display: none;
+}
+#choix_adherent section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#choix_adherent section img {
+  width: 8vw;
+}
+#choix_adherent section h1 {
+  color: white;
+  font-size: 2em;
+}
+#choix_adherent section article {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+#choix_adherent section article label {
+  margin-bottom: 1vh;
+  text-align: left;
+  color: white;
+  font-size: 2vh;
+}
+#choix_adherent section article #arrow {
+  padding: 0.5em;
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  width: 13vw;
+  height: 2vh;
+  background: #2b2c2c;
+  overflow: hidden;
+  border-radius: 0.5em;
+  align-items: center;
+  cursor: pointer;
+}
+#choix_adherent section article #arrow::after {
+  border-radius: 1.2vh;
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 0.5em;
+  background: #2b2c2c;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: #f0f0f0;
+  font-size: 15px;
+}
+#choix_adherent section article #arrow select {
+  color: white;
+  background-color: #2b2c2c;
+  padding: 0.5em;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c2c2c;
+  background-image: none;
+  flex: 1;
+  color: #fff;
+  cursor: pointer;
+}
+#choix_adherent section article #arrow select::-ms-expand {
+  display: none;
+}
+#choix_adherent section article #arrow select option {
+  border-radius: 6em;
+  border: none;
+  outline: none;
+}
+#choix_adherent section article form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  white-space: pre-line;
+  text-align: left;
+  column-gap: 3vw;
+}
+#choix_adherent section article form p label {
+  font-size: 2vh;
+  text-align: left;
+  color: white;
+  padding: 1vh;
+}
+#choix_adherent section article form p input {
+  margin-top: 0.5vh;
+  color: white;
+  background: #2b2c2c;
+  border-radius: 1em;
+  outline-style: none;
+  border: none;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+}
+#choix_adherent section #btn-poursuivre {
+  padding: 1vh;
+}
+#choix_adherent section #btn-poursuivre button {
+  padding: 1vh;
+  font-size: 2vh;
+  border-radius: 1vh;
+  outline-style: none;
+  color: #fff;
+  cursor: pointer;
+  width: 8vw;
+}
+#choix_adherent section #btn-poursuivre button:nth-child(1) {
+  background: #566269;
+}
+#choix_adherent section #btn-poursuivre button:nth-child(2) {
+  background: #FF4C4C;
+  margin-left: 1vw;
+}
+
+#suite_adherent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-color: #3d3a3a;
+  border-radius: 50px;
+  background: #333333;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #5d5858, #4e4a4a);
+  box-shadow: 5px 5px 10px #232121, -10px -10px 15px #302e2e;
+}
+#suite_adherent section {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+#suite_adherent section img {
+  width: 8vw;
+}
+#suite_adherent section h1 {
+  color: white;
+  font-size: 2em;
+}
+#suite_adherent section article {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+#suite_adherent section article label {
+  margin-bottom: 1vh;
+  text-align: left;
+  color: white;
+  font-size: 2vh;
+}
+#suite_adherent section article #profession, #suite_adherent section article #activites {
+  padding: 0.5em;
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  width: 13vw;
+  height: 2vh;
+  background: #2b2c2c;
+  overflow: hidden;
+  border-radius: 0.5em;
+  align-items: center;
+  cursor: pointer;
+}
+#suite_adherent section article #profession::after, #suite_adherent section article #activites::after {
+  border-radius: 1.2vh;
+  content: "▼";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em 0.5em;
+  background: #2b2c2c;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+  color: #f0f0f0;
+  font-size: 15px;
+}
+#suite_adherent section article #profession select, #suite_adherent section article #activites select {
+  color: white;
+  background-color: #2b2c2c;
+  padding: 0.5em;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c2c2c;
+  background-image: none;
+  flex: 1;
+  color: #fff;
+  cursor: pointer;
+}
+#suite_adherent section article #profession select::-ms-expand, #suite_adherent section article #activites select::-ms-expand {
+  display: none;
+}
+#suite_adherent section article #profession select option, #suite_adherent section article #activites select option {
+  border-radius: 6em;
+  border: none;
+  outline: none;
+}
+#suite_adherent section article form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#suite_adherent section article form p label {
+  font-size: 2vh;
+  text-align: left;
+  color: white;
+  padding: 1vh;
+}
+#suite_adherent section article form p input {
+  margin-top: 0.5vh;
+  color: white;
+  background: #2b2c2c;
+  border-radius: 1em;
+  outline-style: none;
+  border: none;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 1em;
+}
+#suite_adherent section #btn-inscrire {
+  padding: 1vh;
+}
+#suite_adherent section #btn-inscrire button {
+  padding: 1vh;
+  font-size: 2vh;
+  border-radius: 1vh;
+  outline-style: none;
+  color: #fff;
+  cursor: pointer;
+  width: 8vw;
+}
+#suite_adherent section #btn-inscrire button:nth-child(1) {
+  background: #566269;
+}
+#suite_adherent section #btn-inscrire button:nth-child(2) {
+  background: #FF4C4C;
+  margin-left: 1vw;
+}
+
+footer {
+  position: fixed;
+  width: 40vw;
+  height: 2vh;
+  background: #000;
+  left: 5%;
+  bottom: 0;
+  transform: translateX(65%);
+  color: white;
+  text-align: center;
+  background-color: #3d3a3a;
+  border-radius: 0.3em 0.3em 0 0;
+  white-space: nowrap;
+}
+footer i {
+  align-self: center;
+}
