@@ -91,8 +91,122 @@
                 <button type="button" type="submit">Poursuivre</button>
             </div>
         </section>
+    </main>
+    <main id="suite_adherent">
+        <section>
+            <img src="/logoMjc.png" alt="MJCDESFLEURS">
+            <svg width="136" height="51" viewBox="0 0 136 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="31" y="3.99902" width="72" height="42" fill="#FF4C4C" />
+                <path
+                    d="M88.7322 25.6656C89.3327 26.0606 89.3327 26.9413 88.7322 27.3364L59.3016 46.6991C58.6366 47.1366 57.752 46.6596 57.752 45.8637V7.13828C57.752 6.34234 58.6366 5.8654 59.3016 6.30287L88.7322 25.6656Z"
+                    fill="#222528" />
+                <path
+                    d="M133.732 24.6646C134.333 25.0597 134.333 25.9403 133.732 26.3354L104.302 45.6981C103.637 46.1356 102.752 45.6586 102.752 44.8627V6.1373C102.752 5.34136 103.637 4.86442 104.302 5.30189L133.732 24.6646Z"
+                    fill="#FF4C4C" />
+                <path d="M11 8C11 5.79086 12.7909 4 15 4H58V47H15C12.7909 47 11 45.2091 11 43V8Z" fill="#222528" />
+                <path
+                    d="M42.7256 24.1639C43.3275 24.5588 43.3275 25.4412 42.7256 25.8361L12.5486 45.6347C11.8835 46.071 11 45.5939 11 44.7985V5.20145C11 4.40609 11.8835 3.92904 12.5486 4.36534L42.7256 24.1639Z"
+                    fill="#2F3337" />
+            </svg>
+            <h1>Inscription</h1>
+            <article>
+                <form class="form-adherents" action="#">
+                    <label for="inscription">Profession: </label>
+                    <div id="profession">
+                        <select name="inscription" id="profession">
+                            <option value="">Choisir une profession</option>
+                            <option value="architecte">Architecte</option>
+                            <option value="artisan">Artisan</option>
+                            <option value="comptable">Comptable</option>
+                            <option value="enseignant">Enseignant(e)</option>
+                            <option value="entrepreneur">Entrepreneur(e)</option>
+                            <option value="etudiant">Étudiant(e)</option>
+                            <option value="infirmier">Infirmier(e)</option>
+                            <option value="journaliste">Journaliste</option>
+                            <option value="musicien">Musicien(nne)</option>
+                            <option value="pompier">Pompier(e)</option>
+                            <option value="chomeur">Chômeur(se)</option>
+                        </select>
+                    </div>
+                    <p><label for="name">Sécurité Sociale :</label>
+                        <label for="name">Géneral :<input type="checkbox" name="general" id="general" required></label>
+                        <label for="name">Autres :<input type="checkbox" name="autres" id="autres" required></label>
+                    </p>
+                    <p>
+                        <input type="text" name="secusociale" id="secu" required>
+                    </p>
+                    <p><label for="activite">Activité :</label>
+                    <div id="activites">
+                        <select name="activite" id="activite" required>
+                            <option value="">Choisir une option</option>
+                            <optgroup label="Bien-être">
+                                <option value="fleursdepeau">A Fleurs de Peau</option>
+                                <option value="hearfulness">Heartfulness</option>
+                                <option value="naturopathie">Naturopathie</option>
+                                <option value="yoga">Yoga</option>
+                            </optgroup>
+                            <optgroup label="Danse">
+                                <option value="claquettes">Claquettes américaines</option>
+                                <option value="breakdance">Breakdance</option>
+                                <option value="bollywood">Danse Bollywood</option>
+                                <option value="classique">Danse Classique & Jazz</option>
+                                <option value="flamenca">Danse Flamenca</option>
+                                <option value="hiphop">Danse Hip Hop</option>
+                                <option value="orientales">Danses Orientales</option>
+                                <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
+                                <option value="polynesienne">Danse Polynésienne</option>
+                                <option value="kids">Kids Danse (Regaeton)</option>
+                                <option value="tango">Tango Argentin</option>
+                                <option value="salsa">Salsa-Kizumba Batchata</option>
+                            </optgroup>
+                            <optgroup label="Lien Social">
+                                <option value="numeriques">Ateliers numériques</option>
+                                <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
+                                <option value="emploi">Un accompagnement vers l'emploi</option>
+                            </optgroup>
+                            <optgroup label="Musique">
+                                <option value="arpege">Arpèges Fleuis</option>
+                                <option value="chantespagnol">Atelier Chant Espagnol</option>
+                                <option value="chantafricain">Chant Africain</option>
+                                <option value="gospel">Chorale Gospel Évidence</option>
+                                <option value="apaulhom">Chorale Homme Apaul'hom</option>
+                                <option value="guitare">Guitare</option>
+                            </optgroup>
+                            <optgroup label="Sport">
+                                <option value="aquabike">Aquabike</option>
+                                <option value="aquagym">Aquagym</option>
+                                <option value="boxe">Boxe Educative Kick-Boxing</option>
+                                <option value="capoiera">Capoiera</option>
+                                <option value="cheerleading">Cheerleading</option>
+                                <option value="gymcardio">Gym Cardio / Insanity</option>
+                                <option value="gymsouplesse">Gym souplesse</option>
+                                <option value="gymfeminine">Gymnastique féminine</option>
+                                <option value="gymentretien">Gymnastique d'entretien</option>
+                                <option value="montagne">Montagne</option>
+                                <option value="musculation">Musculation</option>
+                                <option value="pilates">Pilates</option>
+                                <option value="stretching">Stretching postural</option>
+                                <option value="volleyball">Volleyball</option>
+                            </optgroup>
+                        </select>
+                        </p>
+                    </div>
+                    <p>
+                        <label for="text"><input type="checkbox" name="abonnement" id="abonnement" required>Je souhaite
+                            m'abonner à la newsletter</label>
+                    </p>
+                    <p>
+                        <label for="text"><input type="checkbox" name="benevole" id="benevole" required>Je suis bénévole
+                            au seil de la MJC des Fleurs</label>
+                    </p>
 
-
+                </form>
+            </article>
+            <div id="btn-inscrire">
+                <button type="button" type="reset">Annuler</button>
+                <button type="button" type="submit">Poursuivre</button>
+            </div>
+        </section>
     </main>
     <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
 </body>
