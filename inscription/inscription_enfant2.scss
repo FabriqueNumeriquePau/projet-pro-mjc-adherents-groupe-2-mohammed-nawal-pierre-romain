@@ -58,7 +58,6 @@ body {
             }
     
             .input {
-                height: 20%;
                 background-color: #222528;
                 outline: none;
                 border-radius: 1em;
@@ -69,7 +68,7 @@ body {
             }
 
             #precisez {
-                width : 76%
+                resize: none;
             }
         }
 

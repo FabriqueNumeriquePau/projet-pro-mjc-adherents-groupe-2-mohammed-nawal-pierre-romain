@@ -52,7 +52,6 @@ body main form label {
   font-size: 1em;
 }
 body main form .input {
-  height: 20%;
   background-color: #222528;
   outline: none;
   border-radius: 1em;
@@ -62,7 +61,7 @@ body main form .input {
   color: white;
 }
 body main form #precisez {
-  width: 76%;
+  resize: none;
 }
 body main div {
   width: 100%;
