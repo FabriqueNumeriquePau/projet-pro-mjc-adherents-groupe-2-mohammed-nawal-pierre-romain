@@ -1,0 +1,202 @@
+body{
+    background-color: transparent;
+    margin: 0;
+  }
+
+/*****************************************
+                  Body
+*****************************************/
+section{
+  margin-left: 5vw;
+}
+
+h1{
+  color: white;
+  margin-left: 3vw;
+  margin-top: 3vh;
+  font-size: 3vw;
+}
+
+fieldset, .container, h1, .button, #eg-dark-theme{
+  position: absolute;
+}
+
+fieldset{
+  width: 25vw;
+  height:22vw;
+  background-color: #2B3D50;
+  border-radius: 3%;
+  border: none;
+  color: white;
+  margin-top: 8vh;
+}
+
+legend{
+  font-size:1.1vw;
+}
+
+.destinataire{
+  margin-left: 3vw;
+}
+.expediteur{
+  margin-left: 35vw;
+}
+legend{
+  padding-top: 5vh;
+}
+
+label{
+  font-size: 1vw;
+}
+
+select{
+  background-color: #484F58;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  width: 50vw;
+  height: 1.5vw;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #484f58;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.petitefleche {
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  width: 26vw;
+  height: 1.5vw;
+  background: #484f58;
+  overflow: hidden;
+  border-radius: 1.2vh;
+}
+select {
+  flex: 1;
+  padding: 0 .5vw;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.petitefleche::after {
+  border-radius: 1.2vh;
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.4vw 0.6vw;
+  background: #afb4b9;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  color: #484f58;
+  font-size: 10px;
+}
+/* Transition
+.petitefleche:hover::after {
+  color: #f39c12;
+} */
+
+.file {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #484f58;
+  background-image: none;
+}
+/* Remove IE arrow */
+.file::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.import {
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  width: 26vw;
+  height: 3vh;
+  background: #484f58;
+  overflow: hidden;
+  border-radius: 1.2vh;
+}
+.file {
+  flex: 1;
+  padding: 0 .6vw;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.import::after {
+  border-radius: 1.5vh;
+  content: '📁';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.4vw 0.9vw;
+  background: #afb4b9;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  color: #484f58;
+  font-size: 14px;
+}
+
+#import{
+  display:none;
+}
+
+.button{
+  margin-left: 73vw;
+  margin-top: 10vw;
+}
+
+#eg-dark-theme{
+  margin-top: 28vw;
+  margin-left: 3vw;
+  width: 89vw;
+}
+
+.envoyer{
+  width: 9vw;
+  height: 4vh;
+  color: white;
+  background-color: rgb(105, 69, 236);
+  border-radius: 8px;
+  border: none;
+  display: block;
+  font-size: 1.4vw;
+  text-align: center;
+}
+.historique{
+  width: 9vw;
+  height: 4vh;
+  margin-top: 1em;
+  color: white;
+  background-color: rgb(105, 69, 236);
+  border-radius: 8px;
+  border: none;
+  display: block;
+  font-size: 1.4vw;
+  text-align: center;
+}

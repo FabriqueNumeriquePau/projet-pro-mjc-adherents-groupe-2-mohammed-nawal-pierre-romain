@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/import_export.css">
+    <link rel="stylesheet" href="../structure/css/structure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Import/Export</title>
+</head>
+
+<body>
+    <header>
+        <img src="../logoMjc.png" alt="">
+        <div class="search">
+            <input search="text" placeholder="Rechercher">
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i><span class="fa-home">Tableau de Bord</span></a></li>
+                <li><a href=""><i class="fas fa-users"></i><span class="fa-users">Adhérents</span></a></li>
+                <li><a href=""><i class="far fa-handshake"></i><span class="fa-handshake">Partenaires</span></a></li>
+                <li><a href=""><i class="fas fa-running"></i><span class="fa-running">Activités</span></a></li>
+                <li><a href=""><i class="fas fa-microphone"></i><span class="fa-microphone">Événements</span></a></li>
+                <li><a href=""><i class="far fa-envelope"></i><span class="fa-envelope">Statistiques</span></a></li>
+                <li><a href=""><i class="far fa-file-excel"></i><span class="fa-file-excel">Import/Excel</span></a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i><span class="fa-user-plus">Permissions</span></a></li>
+                <li><a href=""><i class="fas fa-chart-area"></i><span class="fa-chart-area">Newsletters</span></a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Import/Export</h1>
+            <article>
+                <aside id="importer">
+                    <svg width="61" height="62" viewBox="0 0 61 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="flechebas">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M53.375 3.875H7.625C6.61386 3.875 5.64414 4.28326 4.92916 5.00996C4.21417 5.73666 3.8125 6.72229 3.8125 7.75V54.25C3.8125 55.2777 4.21417 56.2633 4.92916 56.99C5.64414 57.7167 6.61386 58.125 7.625 58.125H53.375C54.3861 58.125 55.3559 57.7167 56.0708 56.99C56.7858 56.2633 57.1875 55.2777 57.1875 54.25V7.75C57.1875 6.72229 56.7858 5.73666 56.0708 5.00996C55.3559 4.28326 54.3861 3.875 53.375 3.875ZM7.625 0C5.60272 0 3.66328 0.816516 2.23331 2.26992C0.803346 3.72333 0 5.69457 0 7.75L0 54.25C0 56.3054 0.803346 58.2767 2.23331 59.7301C3.66328 61.1835 5.60272 62 7.625 62H53.375C55.3973 62 57.3367 61.1835 58.7667 59.7301C60.1967 58.2767 61 56.3054 61 54.25V7.75C61 5.69457 60.1967 3.72333 58.7667 2.26992C57.3367 0.816516 55.3973 0 53.375 0L7.625 0Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M40.0307 42.625H24.7807C24.2752 42.625 23.7903 42.4209 23.4328 42.0575C23.0753 41.6942 22.8745 41.2014 22.8745 40.6875C22.8745 40.1736 23.0753 39.6808 23.4328 39.3175C23.7903 38.9541 24.2752 38.75 24.7807 38.75H35.429L19.6186 22.6843C19.2607 22.3204 19.0596 21.827 19.0596 21.3125C19.0596 20.798 19.2607 20.3046 19.6186 19.9408C19.9765 19.5769 20.462 19.3726 20.9682 19.3726C21.4744 19.3726 21.9599 19.5769 22.3179 19.9408L38.1245 36.0104V25.1875C38.1245 24.6736 38.3253 24.1808 38.6828 23.8175C39.0403 23.4541 39.5252 23.25 40.0307 23.25C40.5363 23.25 41.0212 23.4541 41.3787 23.8175C41.7361 24.1808 41.937 24.6736 41.937 25.1875V40.6875C41.937 41.2014 41.7361 41.6942 41.3787 42.0575C41.0212 42.4209 40.5363 42.625 40.0307 42.625Z"
+                            fill="white" />
+                    </svg>
+
+                    <h2>Importer des données</h2>
+                    <p>Choisir le format :</p>
+                    <svg width="74" height="73" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg" class="xls">
+                        <g filter="url(#filter0_d)">
+                            <path
+                                d="M62.465 34.4882H51.9686V29.2399H62.465V34.4882ZM62.465 37.4871H51.9686V42.7354H62.465V37.4871ZM62.465 12.7456H51.9686V17.9938H62.465V12.7456ZM62.465 20.9928H51.9686V26.2409H62.465V20.9928ZM62.465 45.7343H51.9686V50.9826H62.465V45.7343ZM69.715 56.0808C69.4152 57.6403 67.5407 57.6777 66.2887 57.7303H42.9717V64.4779H38.3157L4 58.4799V6.00548L38.5183 0H42.9717V5.97545H65.4865C66.7536 6.02791 68.1481 5.93794 69.2502 6.69513C70.0224 7.80476 69.9475 9.21435 70 10.4888L69.97 49.5205C69.9326 51.7022 70.1723 53.9291 69.715 56.0808ZM31.493 44.3173C29.4238 40.1188 27.3171 35.9501 25.2552 31.7515C27.2945 27.6655 29.3039 23.5644 31.3057 19.4633C29.6037 19.5458 27.9018 19.6507 26.2075 19.7707C24.9403 22.8521 23.4633 25.8511 22.4737 29.0375C21.5515 26.0311 20.3295 23.137 19.2124 20.2055C17.5629 20.2955 15.9134 20.393 14.264 20.4904C16.0034 24.3292 17.8554 28.1152 19.5422 31.9765C17.5554 35.7252 15.6961 39.5265 13.7692 43.2977C15.411 43.3651 17.053 43.4326 18.6949 43.4551C19.8646 40.4712 21.3191 37.5996 22.3387 34.5556C23.2534 37.8246 24.8053 40.846 26.08 43.9724C27.8868 44.1 29.6861 44.2124 31.493 44.3173ZM66.4241 9.53623H42.9717V12.7456H48.9697V17.9938H42.9717V20.9928H48.9697V26.2409H42.9717V29.2399H48.9697V34.4882H42.9717V37.4871H48.9697V42.7354H42.9717V45.7343H48.9697V50.9826H42.9717V54.4497H66.4241V9.53623Z"
+                                fill="#047501" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="74" height="72.4779" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="csv">
+                        <g clip-path="url(#clip0)" filter="url(#filter0_d)">
+                            <path
+                                d="M62.465 35.4882H51.9686V30.2399H62.465V35.4882ZM62.465 38.4871H51.9686V43.7354H62.465V38.4871ZM62.465 13.7456H51.9686V18.9938H62.465V13.7457V13.7456ZM62.465 21.9928H51.9686V27.2409H62.465V21.9928ZM62.465 46.7343H51.9686V51.9826H62.465V46.7341V46.7343ZM69.715 57.0808C69.4152 58.6403 67.5407 58.6777 66.2887 58.7303H42.9717V65.4779H38.3157L4 59.4799V7.00548L38.5183 1H42.9717V6.97545H65.4865C66.7536 7.02791 68.1481 6.93794 69.2502 7.69513C70.0224 8.80476 69.9475 10.2143 70 11.4888L69.97 50.5205C69.9326 52.7022 70.1723 54.9291 69.715 57.0808ZM31.493 45.3173C29.4238 41.1189 27.3171 36.9501 25.2552 32.7515C27.2945 28.6655 29.3039 24.5644 31.3057 20.4633C29.6037 20.5458 27.9018 20.6507 26.2075 20.7707C24.9403 23.8521 23.4633 26.8511 22.4737 30.0375C21.5515 27.0311 20.3295 24.137 19.2124 21.2055C17.5629 21.2955 15.9134 21.393 14.264 21.4904C16.0034 25.3292 17.8554 29.1152 19.5422 32.9765C17.5554 36.7252 15.6961 40.5265 13.7692 44.2977C15.411 44.3651 17.053 44.4326 18.6949 44.4551C19.8646 41.4711 21.3191 38.5996 22.3387 35.5556C23.2534 38.8246 24.8053 41.846 26.08 44.9724C27.8868 45.1 29.6862 45.2124 31.4931 45.3173H31.493ZM66.4241 10.5362H42.9717V13.7456H48.9697V18.9938H42.9717V21.9928H48.9697V27.2409H42.9717V30.2399H48.9697V35.4882H42.9717V38.4871H48.9697V43.7354H42.9717V46.7343H48.9697V51.9826H42.9717V55.4497H66.4241V10.5362Z"
+                                fill="#047501" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0.239258" width="74" height="74"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                            <clipPath id="clip0">
+                                <rect width="66" height="66" fill="white" transform="translate(4 0.239258)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div>
+                    <legend>.xls</legend>
+                    <legend>.csv</legend>
+                    </div>
+
+                    <form action="">
+                        <label for="import">Sélectionner le fichier</label>
+                        <label for="import" class="import"><span class="file"></span></label>
+                        <input type="file" name="import" id="import">
+                        <input type="submit" value="IMPORTER" class="importer">
+                    </form>
+                </aside>
+                <aside id="exporter">
+                    <svg width="61" height="62" viewBox="0 0 61 62" fill="none" xmlns="http://www.w3.org/2000/svg" class="flechehaut">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M53.375 3.875H7.625C6.61386 3.875 5.64414 4.28326 4.92916 5.00996C4.21417 5.73666 3.8125 6.72229 3.8125 7.75V54.25C3.8125 55.2777 4.21417 56.2633 4.92916 56.99C5.64414 57.7167 6.61386 58.125 7.625 58.125H53.375C54.3861 58.125 55.3559 57.7167 56.0708 56.99C56.7858 56.2633 57.1875 55.2777 57.1875 54.25V7.75C57.1875 6.72229 56.7858 5.73666 56.0708 5.00996C55.3559 4.28326 54.3861 3.875 53.375 3.875ZM7.625 0C5.60272 0 3.66328 0.816516 2.23331 2.26992C0.803346 3.72333 0 5.69457 0 7.75L0 54.25C0 56.3054 0.803346 58.2767 2.23331 59.7301C3.66328 61.1835 5.60272 62 7.625 62H53.375C55.3973 62 57.3367 61.1835 58.7667 59.7301C60.1967 58.2767 61 56.3054 61 54.25V7.75C61 5.69457 60.1967 3.72333 58.7667 2.26992C57.3367 0.816516 55.3973 0 53.375 0L7.625 0Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M40.0307 19.375H24.7807C24.2752 19.375 23.7903 19.5791 23.4328 19.9425C23.0753 20.3058 22.8745 20.7986 22.8745 21.3125C22.8745 21.8264 23.0753 22.3192 23.4328 22.6825C23.7903 23.0459 24.2752 23.25 24.7807 23.25H35.429L19.6186 39.3157C19.2607 39.6796 19.0596 40.173 19.0596 40.6875C19.0596 41.202 19.2607 41.6954 19.6186 42.0592C19.9765 42.4231 20.462 42.6274 20.9682 42.6274C21.4744 42.6274 21.9599 42.4231 22.3179 42.0592L38.1245 25.9896V36.8125C38.1245 37.3264 38.3253 37.8192 38.6828 38.1825C39.0403 38.5459 39.5252 38.75 40.0307 38.75C40.5363 38.75 41.0212 38.5459 41.3787 38.1825C41.7361 37.8192 41.937 37.3264 41.937 36.8125V21.3125C41.937 20.7986 41.7361 20.3058 41.3787 19.9425C41.0212 19.5791 40.5363 19.375 40.0307 19.375Z"
+                            fill="white" />
+                    </svg>
+                    <h2>Exporter les données</h2>
+                    <p>Choisir le format :</p>
+                    <svg width="74" height="73" viewBox="0 0 74 73" fill="none" xmlns="http://www.w3.org/2000/svg" class="xls">
+                        <g filter="url(#filter0_d)">
+                            <path
+                                d="M62.465 34.4882H51.9686V29.2399H62.465V34.4882ZM62.465 37.4871H51.9686V42.7354H62.465V37.4871ZM62.465 12.7456H51.9686V17.9938H62.465V12.7456ZM62.465 20.9928H51.9686V26.2409H62.465V20.9928ZM62.465 45.7343H51.9686V50.9826H62.465V45.7343ZM69.715 56.0808C69.4152 57.6403 67.5407 57.6777 66.2887 57.7303H42.9717V64.4779H38.3157L4 58.4799V6.00548L38.5183 0H42.9717V5.97545H65.4865C66.7536 6.02791 68.1481 5.93794 69.2502 6.69513C70.0224 7.80476 69.9475 9.21435 70 10.4888L69.97 49.5205C69.9326 51.7022 70.1723 53.9291 69.715 56.0808ZM31.493 44.3173C29.4238 40.1188 27.3171 35.9501 25.2552 31.7515C27.2945 27.6655 29.3039 23.5644 31.3057 19.4633C29.6037 19.5458 27.9018 19.6507 26.2075 19.7707C24.9403 22.8521 23.4633 25.8511 22.4737 29.0375C21.5515 26.0311 20.3295 23.137 19.2124 20.2055C17.5629 20.2955 15.9134 20.393 14.264 20.4904C16.0034 24.3292 17.8554 28.1152 19.5422 31.9765C17.5554 35.7252 15.6961 39.5265 13.7692 43.2977C15.411 43.3651 17.053 43.4326 18.6949 43.4551C19.8646 40.4712 21.3191 37.5996 22.3387 34.5556C23.2534 37.8246 24.8053 40.846 26.08 43.9724C27.8868 44.1 29.6861 44.2124 31.493 44.3173ZM66.4241 9.53623H42.9717V12.7456H48.9697V17.9938H42.9717V20.9928H48.9697V26.2409H42.9717V29.2399H48.9697V34.4882H42.9717V37.4871H48.9697V42.7354H42.9717V45.7343H48.9697V50.9826H42.9717V54.4497H66.4241V9.53623Z"
+                                fill="#047501" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0" width="74" height="72.4779" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                    
+
+                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" class="csv">
+                        <g clip-path="url(#clip0)" filter="url(#filter0_d)">
+                            <path
+                                d="M62.465 35.4882H51.9686V30.2399H62.465V35.4882ZM62.465 38.4871H51.9686V43.7354H62.465V38.4871ZM62.465 13.7456H51.9686V18.9938H62.465V13.7457V13.7456ZM62.465 21.9928H51.9686V27.2409H62.465V21.9928ZM62.465 46.7343H51.9686V51.9826H62.465V46.7341V46.7343ZM69.715 57.0808C69.4152 58.6403 67.5407 58.6777 66.2887 58.7303H42.9717V65.4779H38.3157L4 59.4799V7.00548L38.5183 1H42.9717V6.97545H65.4865C66.7536 7.02791 68.1481 6.93794 69.2502 7.69513C70.0224 8.80476 69.9475 10.2143 70 11.4888L69.97 50.5205C69.9326 52.7022 70.1723 54.9291 69.715 57.0808ZM31.493 45.3173C29.4238 41.1189 27.3171 36.9501 25.2552 32.7515C27.2945 28.6655 29.3039 24.5644 31.3057 20.4633C29.6037 20.5458 27.9018 20.6507 26.2075 20.7707C24.9403 23.8521 23.4633 26.8511 22.4737 30.0375C21.5515 27.0311 20.3295 24.137 19.2124 21.2055C17.5629 21.2955 15.9134 21.393 14.264 21.4904C16.0034 25.3292 17.8554 29.1152 19.5422 32.9765C17.5554 36.7252 15.6961 40.5265 13.7692 44.2977C15.411 44.3651 17.053 44.4326 18.6949 44.4551C19.8646 41.4711 21.3191 38.5996 22.3387 35.5556C23.2534 38.8246 24.8053 41.846 26.08 44.9724C27.8868 45.1 29.6862 45.2124 31.4931 45.3173H31.493ZM66.4241 10.5362H42.9717V13.7456H48.9697V18.9938H42.9717V21.9928H48.9697V27.2409H42.9717V30.2399H48.9697V35.4882H42.9717V38.4871H48.9697V43.7354H42.9717V46.7343H48.9697V51.9826H42.9717V55.4497H66.4241V10.5362Z"
+                                fill="#047501" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d" x="0" y="0.239258" width="74" height="74"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                            </filter>
+                            <clipPath id="clip0">
+                                <rect width="66" height="66" fill="white" transform="translate(4 0.239258)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div>
+                    <legend>.xls</legend>
+                    <legend>.csv</legend>
+                    </div>
+                    <form action="">
+                        <label for="">Nom du fichier:</label>
+                        <input type="text" class="text">
+                        <label for="export">Sélectionner le dossier:</label>
+                        <label for="export" class="export"><span class="ex"></span></label>
+                        <input type="file" name="export" id="export">
+                        <input type="submit" value="EXPORTER" class="exporter">
+                    </form>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
+</body>
+
+</html>
