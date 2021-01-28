@@ -126,13 +126,14 @@ body {
 
 }
 
+//choix adhérent
 
 #choix_adherent {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 40%;
-    height: 70%;
+    height: 80vh;
     transform: translate(-50%, -50%);
     background-color: rgb(61, 58, 58);
     border-radius: 50px;
@@ -148,6 +149,8 @@ body {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        height: 80vh;
+
 
         img {
             width: 8vw;
@@ -267,6 +270,7 @@ body {
                         padding: 0.3em;
                         font-size: 1em;
 
+
                     }
                 }
             }
@@ -298,13 +302,14 @@ body {
 }
 
 
-#suite_adherent{
+//suite après poursuivre
+
+#suite_adherent {
 
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 40%;
-    height: 70%;
+    width: 40vw;
     transform: translate(-50%, -50%);
     background-color: rgb(61, 58, 58);
     border-radius: 50px;
@@ -312,139 +317,132 @@ body {
     border-radius: 12px;
     background: linear-gradient(145deg, #5d5858, #4e4a4a);
     box-shadow: 5px 5px 10px #232121,
-        -10px -10px 15px #302e2e;
-   
+    -10px -10px 15px #302e2e;
+    // display: none;
 
+    
     section {
-        margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-         white-space: nowrap;
-       
-
+        text-align: left;
+        width: 40vw;
+        height: 90vh;
+        
+        
         img {
             width: 8vw;
         }
 
+
         h1 {
-            color: white;
-            font-size: 2em;
+            color: rgb(255, 255, 255);
+            font-size: 5vh;
+
+
         }
 
         article {
-            width: 30vw;
-            display: flex;
-            flex-direction: column;
-
-            label {
-                margin-bottom: 1vh;
-                text-align: left;
-                color: white;
-                font-size: 2vh;
-            }
 
 
-            #profession, #activites {
-                padding: .5em;
-                margin-top: 0;
-                position: relative;
-                display: flex;
-                width: 13vw;
-                height: 2vh;
-                background: #2b2c2c;
-                overflow: hidden;
-                border-radius: .5em;
-                align-items: center;
-                cursor: pointer;
-
-                &::after {
-                    border-radius: 1.2vh;
-                    content: '\25BC';
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: .5em .5em;
-                    background: #2b2c2c;
-                    cursor: pointer;
-                    pointer-events: none;
-                    -webkit-transition: .25s all ease;
-                    -o-transition: .25s all ease;
-                    transition: .25s all ease;
-                    color: #f0f0f0;
-                    font-size: 15px;
-                }
-
-
-                select {
-                    color: white;
-                    background-color: #2b2c2c;
-                    padding: .5em;
-                    font-size: 1em;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    -ms-appearance: none;
-                    appearance: none;
-                    outline: 0;
-                    box-shadow: none;
-                    border: 0 !important;
-                    background: #2c2c2c;
-                    background-image: none;
-                    flex: 1;
-                    color: #fff;
-                    cursor: pointer;
-
-                    &::-ms-expand {
-
-                        display: none;
-                    }
-
-
-                    option {
-
-                        border-radius: 6em;
-                        border: none;
-                        outline: none;
-                    }
-
-                }
-            }
 
             form {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-
-               
-
+                white-space: nowrap;
 
                 p {
-
-
                     label {
-                        font-size: 2vh;
+                        padding-right: 1vw;
                         text-align: left;
                         color: white;
-                        padding: 1vh;
+                        font-size: 2.5vh;
                     }
 
                     input {
-                        margin-top: .5vh;
+
                         color: white;
+                        padding: 1vh;
                         background: #2b2c2c;
                         border-radius: 1em;
                         outline-style: none;
                         border: none;
-                        width: 100%;
-                        padding: 0.3em;
-                        font-size: 1em;
 
+                    }
+                    
+                    [type="checkbox"]{
+                        width: 1.4vw;
+                        height: 2vh;
+                        margin: 1vw;
+                        border: 2px solid rgb(233, 17, 17);
+                        background: rgb(145, 31, 31);
+                        border-radius: .5em;
+                        transition: all .275s;
+                    }
+
+
+
+                }
+
+                #profession,
+                #activites {
+                    padding: .5em;
+                    margin-top: 0;
+                    position: relative;
+                    display: flex;
+                    width: 30vw;
+                    height: 3vh;
+                    background: #2b2c2c;
+                    overflow: hidden;
+                    border-radius: .5em;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &::after {
+                        border-radius: 1.2vh;
+                        content: '\25BC';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        padding: 1em 1em;
+                        background: #2b2c2c;
+                        cursor: pointer;
+                        pointer-events: none;
+                        -webkit-transition: .25s all ease;
+                        -o-transition: .25s all ease;
+                        transition: .25s all ease;
+                        color: #f0f0f0;
+                        font-size: 15px;
+                    }
+
+
+                    select {
+                        color: white;
+                        background-color: #2b2c2c;
+                        padding: 1em;
+                        font-size: 2vh;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        appearance: none;
+                        outline: 0;
+                        box-shadow: none;
+                        border: 0 !important;
+                        background: #2c2c2c;
+                        background-image: none;
+                        flex: 1;
+                        color: #fff;
+                        cursor: pointer;
+
+
+                        &::-ms-expand {
+
+                            display: none;
+                        }
                     }
                 }
             }
-        }
 
-        #btn-inscrire {
+        }
+        #btn-inscrire{
             padding: 1vh;
 
             button {
@@ -465,11 +463,10 @@ body {
                 background: #FF4C4C;
                 margin-left: 1vw;
             }
+
         }
     }
 }
-
-
 
 
 

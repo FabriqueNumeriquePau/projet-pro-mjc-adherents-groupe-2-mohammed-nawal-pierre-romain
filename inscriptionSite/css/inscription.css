@@ -108,7 +108,7 @@ body {
   top: 50%;
   left: 50%;
   width: 40%;
-  height: 70%;
+  height: 80vh;
   transform: translate(-50%, -50%);
   background-color: #3d3a3a;
   border-radius: 50px;
@@ -123,6 +123,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  height: 80vh;
 }
 #choix_adherent section img {
   width: 8vw;
@@ -246,8 +247,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40%;
-  height: 70%;
+  width: 40vw;
   transform: translate(-50%, -50%);
   background-color: #3d3a3a;
   border-radius: 50px;
@@ -257,51 +257,68 @@ body {
   box-shadow: 5px 5px 10px #232121, -10px -10px 15px #302e2e;
 }
 #suite_adherent section {
-  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  text-align: left;
+  width: 40vw;
+  height: 90vh;
 }
 #suite_adherent section img {
   width: 8vw;
 }
 #suite_adherent section h1 {
   color: white;
-  font-size: 2em;
+  font-size: 5vh;
 }
-#suite_adherent section article {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
+#suite_adherent section article form {
+  white-space: nowrap;
 }
-#suite_adherent section article label {
-  margin-bottom: 1vh;
+#suite_adherent section article form p label {
+  padding-right: 1vw;
   text-align: left;
   color: white;
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
-#suite_adherent section article #profession, #suite_adherent section article #activites {
+#suite_adherent section article form p input {
+  color: white;
+  padding: 1vh;
+  background: #2b2c2c;
+  border-radius: 1em;
+  outline-style: none;
+  border: none;
+}
+#suite_adherent section article form p [type=checkbox] {
+  width: 1.4vw;
+  height: 2vh;
+  margin: 1vw;
+  border: 2px solid #e91111;
+  background: #911f1f;
+  border-radius: 0.5em;
+  transition: all 0.275s;
+}
+#suite_adherent section article form #profession,
+#suite_adherent section article form #activites {
   padding: 0.5em;
   margin-top: 0;
   position: relative;
   display: flex;
-  width: 13vw;
-  height: 2vh;
+  width: 30vw;
+  height: 3vh;
   background: #2b2c2c;
   overflow: hidden;
   border-radius: 0.5em;
   align-items: center;
   cursor: pointer;
 }
-#suite_adherent section article #profession::after, #suite_adherent section article #activites::after {
+#suite_adherent section article form #profession::after,
+#suite_adherent section article form #activites::after {
   border-radius: 1.2vh;
   content: "▼";
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.5em 0.5em;
+  padding: 1em 1em;
   background: #2b2c2c;
   cursor: pointer;
   pointer-events: none;
@@ -311,11 +328,12 @@ body {
   color: #f0f0f0;
   font-size: 15px;
 }
-#suite_adherent section article #profession select, #suite_adherent section article #activites select {
+#suite_adherent section article form #profession select,
+#suite_adherent section article form #activites select {
   color: white;
   background-color: #2b2c2c;
-  padding: 0.5em;
-  font-size: 1em;
+  padding: 1em;
+  font-size: 2vh;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -329,34 +347,9 @@ body {
   color: #fff;
   cursor: pointer;
 }
-#suite_adherent section article #profession select::-ms-expand, #suite_adherent section article #activites select::-ms-expand {
+#suite_adherent section article form #profession select::-ms-expand,
+#suite_adherent section article form #activites select::-ms-expand {
   display: none;
-}
-#suite_adherent section article #profession select option, #suite_adherent section article #activites select option {
-  border-radius: 6em;
-  border: none;
-  outline: none;
-}
-#suite_adherent section article form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-#suite_adherent section article form p label {
-  font-size: 2vh;
-  text-align: left;
-  color: white;
-  padding: 1vh;
-}
-#suite_adherent section article form p input {
-  margin-top: 0.5vh;
-  color: white;
-  background: #2b2c2c;
-  border-radius: 1em;
-  outline-style: none;
-  border: none;
-  width: 100%;
-  padding: 0.3em;
-  font-size: 1em;
 }
 #suite_adherent section #btn-inscrire {
   padding: 1vh;
