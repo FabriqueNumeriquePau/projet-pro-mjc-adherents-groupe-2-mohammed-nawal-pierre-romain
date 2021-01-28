@@ -157,6 +157,9 @@ main section {
 main section #stats {
   height: 40vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 main section #buttons {
   vertical-align: bottom;

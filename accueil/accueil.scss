@@ -210,6 +210,9 @@ main {
         #stats {
             height: 40vh;
             width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
         }
 
         #buttons {
