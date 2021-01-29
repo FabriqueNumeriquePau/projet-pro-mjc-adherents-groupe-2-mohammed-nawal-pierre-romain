@@ -25,108 +25,182 @@ body {
             height: 10%;
             margin-left: auto;
             margin-right: auto;
-            padding: 0.5em;
+            padding: 0.5vw;
         }
 
         h1 {
             text-align: center;
-            font-size: 1.5em;
+            font-size: 3vh;
         }
-        svg{
-            margin-left: auto;
-            margin-right: auto;
-            height: 2em;
-        }
-        
-        form {
-            display: grid;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: 1fr 1fr;
-            column-gap: 1.5em;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 3%;
-            width: 90%;
-            height: 55%;
-            
-            p{
-                margin: 0;
-                padding: 0;
-            }
-            label{
-                font-size: 1.2em;
-            }
-    
-            .input {
-                width: 95%;
-                height: 20%;
-                background-color: #222528;
-                outline: none;
-                border-radius: 1em;
-                font-size: 1.2em;
-                border: none;
-                padding: 0.5em;
-                color: white;
-            }
-            .select {
-                width: 100%;
-                height: 45%;
-                background-color: #222528;
-                color: white;
-                outline: none;
-                border-radius: 1em;
-                font-size: 1.2em;
-                border: none;
-                padding: 0.5em;
-            }
 
+        svg {
+            margin-left: auto;
+            margin-right: auto;
+            height: 4vh;
         }
-        div{
+
+        div {
             width: 100%;
             display: flex;
             justify-content: space-around;
             height: 7%;
+        }
 
-            .annuler {
-                width: 40%;
-                height: 100%;
-                background-color: #566269;
-                border-radius: 0.7em;
-                border: none;
-                margin-top: 0.2em;
-                text-align: middle;
-                font-size: 1em;
-                cursor: pointer;
+        .annuler {
+            width: 40%;
+            height: 100%;
+            background-color: #566269;
+            color: white;
+            border-radius: 0.7vw;
+            border: none;
+            text-align: middle;
+            font-size: 1.3vw;
+            cursor: pointer;
+            margin-top: 1%;
+        }
+
+        .poursuivre {
+            width: 40%;
+            height: 100%;
+            background-color: #5767F5;
+            border-radius: 0.7vw;
+            color: white;
+            border: none;
+            text-align: middle;
+            font-size: 1.3vw;
+            cursor: pointer;
+            margin-top: 1%;
+        }
+
+        .input {
+            background-color: #222528;
+            outline: none;
+            height: 45%;
+            border-radius: 1vw;
+            font-size: 2.3vh;
+            border: none;
+            padding: 0.5vw;
+            color: white;
+        }
+
+        .select {
+            width: 100%;
+            height: 35%;
+            background-color: #222528;
+            color: white;
+            outline: none;
+            border-radius: 1vw;
+            font-size: 2.3vh;
+            border: none;
+            padding: 0.5vw;
+        }
+
+        form {
+            display: grid;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 60%;
+
+            label {
+                font-size: 1.5vw;
             }
-            .poursuivre {
-                width: 40%;
-                height: 100%;
-                background-color: #5767F5;
-                border-radius: 0.7em;
-                color: white;
-                font-size: 1em;
-                border: none;
-                margin-top: 0.2em;
-                text-align: middle;
-                font-size: 1em;
-                cursor: pointer;
-            }
-            a{
-                text-decoration: none;
-                color: white;
+        }
+
+        p {
+            margin: 0;
+            margin-top: 0.7vh;
+        }
+    }
+
+    #page1 {
+        visibility: visible;
+
+        form {
+            margin-top: 3%;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2vw;
+
+
+            .input {
+                width: 95%;
+                height: 20%;
             }
         }
     }
-}
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.5em;
-    text-align: center;
-    color: white;
-    background-color: #2F3337;
-    border-radius: 0.8em 0.8em 0em 0em;
+    #page2 {
+        visibility: hidden;
+
+        form {
+            grid-template-rows: repeat(7, 1fr);
+
+            #precisez {
+                resize: none;
+                width: 93%;
+                height: 30%;
+            }
+        }
+
+        div button {
+            margin-top: 2%;
+        }
+    }
+
+    #page3 {
+        visibility: hidden;
+
+        form {
+            grid-template-rows: repeat(5 1fr);
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2vw;
+            margin-top: 1%;
+            height: 60%;
+
+            #adresse {
+                grid-column: span 2;
+                width: 102%;
+            }
+
+            .input {
+                width: 95%;
+                height: 20%;
+            }
+
+            .image {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                height: 100%;
+                width: 100%;
+
+                #label {
+                    grid-column: span 2;
+                    margin: auto;
+                }
+
+                .droit {
+                    input {
+                        vertical-align: middle;
+                        margin: auto;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0.5em;
+        text-align: center;
+        color: white;
+        background-color: #2F3337;
+        border-radius: 0.8em 0.8em 0em 0em;
+    }
 }
