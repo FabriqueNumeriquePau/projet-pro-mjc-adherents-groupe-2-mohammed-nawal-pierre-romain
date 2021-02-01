@@ -105,7 +105,6 @@ body #page1 {
   visibility: visible;
 }
 body #page1 form {
-  margin-top: 3%;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr 1fr;
   column-gap: 2vw;
