@@ -12,13 +12,16 @@ section{
 
 h1{
   color: white;
+  margin: 0;
   margin-left: 3vw;
-  margin-top: 3vh;
+  margin-top: 2vh;
   font-size: 3vw;
+  padding: 0;
 }
 
-fieldset, .container, h1, .button, #eg-dark-theme{
-  position: absolute;
+form{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 fieldset{
@@ -28,7 +31,6 @@ fieldset{
   border-radius: 3%;
   border: none;
   color: white;
-  margin-top: 8vh;
 }
 
 legend{
@@ -39,7 +41,7 @@ legend{
   margin-left: 3vw;
 }
 .expediteur{
-  margin-left: 35vw;
+  margin-left: 5vw;
 }
 legend{
   padding-top: 5vh;
@@ -107,10 +109,6 @@ select {
   color: #484f58;
   font-size: 10px;
 }
-/* Transition
-.petitefleche:hover::after {
-  color: #f39c12;
-} */
 
 .file {
   -webkit-appearance: none;
@@ -167,14 +165,8 @@ select {
 }
 
 .button{
-  margin-left: 73vw;
+  margin-left: 5vw;
   margin-top: 10vw;
-}
-
-#eg-dark-theme{
-  margin-top: 28vw;
-  margin-left: 3vw;
-  width: 89vw;
 }
 
 .envoyer{
@@ -187,6 +179,7 @@ select {
   display: block;
   font-size: 1.4vw;
   text-align: center;
+  cursor: pointer;
 }
 .historique{
   width: 9vw;
@@ -199,4 +192,11 @@ select {
   display: block;
   font-size: 1.4vw;
   text-align: center;
+  cursor: pointer;
+}
+
+#eg-dark-theme{
+  margin-left: 3vw;
+  margin-top: 1vh;
+  width: 89vw;
 }

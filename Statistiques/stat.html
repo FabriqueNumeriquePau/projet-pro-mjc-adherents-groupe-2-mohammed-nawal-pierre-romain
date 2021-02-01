@@ -4,33 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stat.css">
+    <link rel="stylesheet" href="../structure/css/structure.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
     <title>Statistiques</title>
 </head>
 <body>
-    
+    <header>
+        <img src="../logoMjc.png" alt="">
+        <div class="search">
+            <input search="text" placeholder="Rechercher">
+            <button type="submit" class="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="profil">
+            <p>prénom-nom</p>
+        </div>
+        <button type="button" class="sign_out">
+            <i class="fas fa-sign-out-alt"></i>
+        </button>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fas fa-home"></i><span class="fa-home">Tableau de Bord</span></a></li>
+                <li><a href=""><i class="fas fa-users"></i><span class="fa-users">Adhérents</span></a></li>
+                <li><a href=""><i class="far fa-handshake"></i><span class="fa-handshake">Partenaires</span></a></li>
+                <li><a href=""><i class="fas fa-running"></i><span class="fa-running">Activités</span></a></li>
+                <li><a href=""><i class="fas fa-microphone"></i><span class="fa-microphone">Événements</span></a></li>
+                <li><a href=""><i class="far fa-envelope"></i><span class="fa-envelope">Statistiques</span></a></li>
+                <li><a href=""><i class="far fa-file-excel"></i><span class="fa-file-excel">Import/Excel</span></a></li>
+                <li><a href=""><i class="fas fa-user-plus"></i><span class="fa-user-plus">Permissions</span></a></li>
+                <li><a href=""><i class="fas fa-chart-area"></i><span class="fa-chart-area">Newsletters</span></a></li>
+            </ul>
+        </nav>
     <section>
         <h1>Statistiques</h1>
         <form action="">
+            <fieldset class="colone1">
             <legend>Critères :</legend>
             <label for="age">Age :</label>
-            <input type="text" name="age" id="age">
+            <p id="value" style="color: white;"> Value</p>
+            <div class="middle">
+              <div class="multi-range-slider">
+                <input type="range" name="age" id="input-left" min="0" max="100" value="25">
+                <input type="range" name="age" id="input-right" min="0" max="100" value="75">
+            
+                <div class="slider">
+                  <div class="track"></div>
+                  <div class="range"></div>
+                  <div class="thumb left"></div>
+                  <div class="thumb right"></div>
+                </div>
+              </div>
+            </div>
             <label for="sexe">Sexe :</label>
+            <div class="petitefleche">
             <select name="sexe" id="sexe"></select>
+            </div>
             <label for="profession">Profession :</label>
+            <div class="petitefleche">
             <select name="profession" id="profession"></select>
+            </div>
+            </fieldset>
+            <fieldset class="colone2">
             <label for="evenement">Événements :</label>
+            <div class="petitefleche">
             <select name="evenement" id="evenement"></select>
+            </div>
             <label for="activite">Activités :</label>
-            <select name="activite" id="activite"></select>
+            <div class="petitefleche">
+                <select name="activite" id="activite">
+                  <option value=""></option>
+                  <optgroup label="Bien-être">
+                    <option value="fleursdepeau">A Fleurs de Peau</option>
+                    <option value="hearfulness">Heartfulness</option>
+                    <option value="naturopathie">Naturopathie</option>
+                    <option value="yoga">Yoga</option>
+                  </optgroup>
+                  <optgroup label="Danse">
+                    <option value="claquettes">Claquettes américaines</option>
+                    <option value="breakdance">Breakdance</option>
+                    <option value="bollywood">Danse Bollywood</option>
+                    <option value="classique">Danse Classique & Jazz</option>
+                    <option value="flamenca">Danse Flamenca</option>
+                    <option value="hiphop">Danse Hip Hop</option>
+                    <option value="orientales">Danses Orientales</option>
+                    <option value="rock">Danse Rock - Lindy Hop - Balboa</option>
+                    <option value="polynesienne">Danse Polynésienne</option>
+                    <option value="kids">Kids Danse (Regaeton)</option>
+                    <option value="tango">Tango Argentin</option>
+                    <option value="salsa">Salsa-Kizumba Batchata</option>
+                  </optgroup>
+                  <optgroup label="Lien Social">
+                    <option value="numeriques">Ateliers numériques</option>
+                    <option value="foyer">Le Foyer: lieu de vie de la MJC</option>
+                    <option value="emploi">Un accompagnement vers l'emploi</option>
+                  </optgroup>
+                  <optgroup label="Musique">
+                    <option value="arpege">Arpèges Fleuis</option>
+                    <option value="chantespagnol">Atelier Chant Espagnol</option>
+                    <option value="chantafricain">Chant Africain</option>
+                    <option value="gospel">Chorale Gospel Évidence</option>
+                    <option value="apaulhom">Chorale Homme Apaul'hom</option>
+                    <option value="guitare">Guitare</option>
+                  </optgroup>
+                  <optgroup label="Sport">
+                    <option value="aquabike">Aquabike</option>
+                    <option value="aquagym">Aquagym</option>
+                    <option value="boxe">Boxe Educative Kick-Boxing</option>
+                    <option value="capoiera">Capoiera</option>
+                    <option value="cheerleading">Cheerleading</option>
+                    <option value="gymcardio">Gym Cardio / Insanity</option>
+                    <option value="gymsouplesse">Gym souplesse</option>
+                    <option value="gymfeminine">Gymnastique féminine</option>
+                    <option value="gymentretien">Gymnastique d'entretien</option>
+                    <option value="montagne">Montagne</option>
+                    <option value="musculation">Musculation</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="stretching">Stretching postural</option>
+                    <option value="volleyball">Volleyball</option>
+                  </optgroup>
+                </select>
+              </div>
             <label for="etablissement">Établissement scolaire fréquenté :</label>
+            <div class="petitefleche">
             <select name="etablissement" id="etablissement"></select>
+            </div>
             <label for="zone">Zone géographique :</label>
+            <div class="petitefleche">
             <select name="zone" id="zone"></select>
-            <input type="submit" value="GÉNÉRER">
-            <input type="reset" value="RÉINITIALISER">
+            </div>
+            </fieldset>
+            <fieldset class="colone3">
+            <input type="submit" value="GÉNÉRER" class="submit">
+            <input type="reset" value="RÉINITIALISER" class="reset">
+            </fieldset>
         </form>
-        <article></article>
-        <article></article>
+        <div class="article">
+        <article class="graphique1"></article>
+        <article class="graphique2"></article>
+        </div>
     </section>
+    <footer><i class="far fa-copyright"> COPYRIGHT MJCDESFLEURS 2020 - TOUS DROITS RÉSERVÉS</i></footer>
+    <script src="js/stat.js"></script>
 </body>
 </html>

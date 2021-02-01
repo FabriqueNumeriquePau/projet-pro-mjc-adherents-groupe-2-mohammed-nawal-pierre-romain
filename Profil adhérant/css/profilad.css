@@ -28,105 +28,105 @@ section {
 
 form {
   margin-left          : 0.5vw;
-  display         : inline-flex;
-  flex-direction  : column;
+  display              : inline-flex;
+  flex-direction       : column;
 }
 
 /**************************************************
-HEADER
+                    HEADER
 **************************************************/
 
 header {
-  display: grid;
+  display              : grid;
   grid-template-columns: 20vw 60vw 15vw 1fr;
-  grid-template-areas: "search logo profil signOut";
-  align-items: center;
-  width: 100vw;
-  height: 7vh;
-  background-color: #2B3D50;
+  grid-template-areas  : "search logo profil signOut";
+  align-items          : center;
+  width                : 100vw;
+  height               : 7vh;
+  background-color     : #2B3D50;
 }
 header img {
-  height: 8vh;
-  width: 10vw;
-  padding: 1vh;
-  grid-area: logo;
-  margin-left: 49vh;
+  height               : 8vh;
+  width                : 10vw;
+  padding              : 1vh;
+  grid-area            : logo;
+  margin-left          : 49vh;
 }
 header .search {
-  display: flex;
-  align-self: center;
-  grid-area: search;
-  margin-left: 1.5vw;
+  display              : flex;
+  align-self           : center;
+  grid-area            : search;
+  margin-left          : 1.5vw;
 }
 header .search input {
-  border: none;
-  border-radius: 1em 0 0 1em;
-  width: 30vw;
-  height: 4vh;
-  align-self: center;
-  outline-style: none;
-  background-color: #2C2F33;
+  border               : none;
+  border-radius        : 1em 0 0 1em;
+  width                : 30vw;
+  height               : 4vh;
+  align-self           : center;
+  outline-style        : none;
+  background-color     : #2C2F33;
 }
 header .search input:focus {
   color: #fcf7f7;
 }
 header .search input::placeholder {
-  color: #fcf7f7;
+  color    : #fcf7f7;
   font-size: 18px;
 }
 header .search .submit {
-  align-self: center;
-  width: 4em;
-  height: 3vh;
+  align-self   : center;
+  width        : 4em;
+  height       : 3vh;
   border-bottom: 3px solid white;
-  background: #C4C4C4;
-  text-align: center;
-  color: #fff;
+  background   : #C4C4C4;
+  text-align   : center;
+  color        : #fff;
   border-radius: 0 1em 1em 0;
-  cursor: pointer;
+  cursor       : pointer;
   outline-style: none;
-  font-size: 2.3vh;
+  font-size    : 2.3vh;
 }
 header .search .submit:active {
   border-bottom: 1px solid white;
 }
 header .profil {
-  background-image: url("/wp2515187-black-panther-animal-wallpapers.jpg");
-  background-size: contain;
+  background-image : url("/wp2515187-black-panther-animal-wallpapers.jpg");
+  background-size  : contain;
   background-repeat: no-repeat;
-  height: 6vh;
-  width: 3vw;
-  border-radius: 50%;
-  grid-area: profil;
-  margin: 0;
+  height           : 6vh;
+  width            : 3vw;
+  border-radius    : 50%;
+  grid-area        : profil;
+  margin           : 0;
 }
 header .profil p {
-  padding: 1vw 0 0 0;
-  color: white;
-  font-size: 2vh;
-  margin-left: 3.5vw;
-  width: 5vw;
-  height: 4vh;
-  white-space: nowrap;
+  padding          : 1vw 0 0 0;
+  color            : white;
+  font-size        : 2vh;
+  margin-left      : 3.5vw;
+  width            : 5vw;
+  height           : 4vh;
+  white-space      : nowrap;
 }
 header .sign_out {
-  width: 4vw;
-  outline-style: none;
-  border: none;
-  border-bottom: 3px solid white;
-  background-color: #2B3D50;
-  cursor: pointer;
-  grid-area: signOut;
-  padding-bottom: 1.8vh;
-  padding-top: 1vh;
-  margin-left: 1vw;
+  width            : 4vw;
+  outline-style    : none;
+  border           : none;
+  border-bottom    : 3px solid white;
+  background-color : #2B3D50;
+  cursor           : pointer;
+  grid-area        : signOut;
+  padding-bottom   : 1.8vh;
+  padding-top      : 1vh;
+  margin-left      : 1vw;
 }
 header .sign_out:active {
   border-bottom: 1px solid white;
 }
 header .sign_out i {
   font-size: 3vh;
-  color: white;
+  color    : white;
 }
 
 
@@ -134,26 +134,26 @@ header .sign_out i {
             ACTIVITE ET EVENEMENT
 **************************************************/
 table {
-  table-layout: fixed;
-  text-align: center;
-  white-space: nowrap;
+  table-layout   : fixed;
+  text-align     : center;
+  white-space    : nowrap;
   border-collapse: collapse;
-  margin-left: 1vw;
-  overflow-x: hidden;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  margin-left    : 1vw;
+  overflow-x     : hidden;
+  color          : white;
+  text-align     : center;
+  display        : flex;
+  flex-direction : column;
 }
 
 table th {
-  height: 2em;
-  width: 7.3vw;
+  height         : 2em;
+  width          : 7.3vw;
 }
 
 table tr {
-  padding: 1em;
-  font-size: 0.7vw;
+  padding        : 1em;
+  font-size      : 0.7vw;
 }
 
 
@@ -239,6 +239,7 @@ select {
   border-radius     : 9px;
   background-color  : rgba(4, 117, 1, 1);
   color             : white;
+  cursor: pointer;
 }
 
 #désinscrire {
@@ -251,6 +252,7 @@ select {
   border-radius     : 9px;
   background-color  : rgba(107, 2, 2, 1);
   color             : white;
+  cursor: pointer;
 }
 
 /**********************************************
@@ -317,6 +319,7 @@ img {
   border-radius   : 9px;
   background-color: rgba(4, 117, 1, 1);
   color           : white;
+  cursor: pointer;
 }
 
 /********************************************************
@@ -365,4 +368,5 @@ form label {
   border-radius   : 9px;
   background-color: rgba(4, 117, 1, 1);
   color           : white;
+  cursor: pointer;
 }

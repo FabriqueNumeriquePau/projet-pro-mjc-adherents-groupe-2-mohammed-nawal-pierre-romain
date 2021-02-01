@@ -110,7 +110,7 @@ main nav {
   overflow: hidden;
   transition: width 600ms ease;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1000;
 }
 main nav:hover {
   width: 20vw;

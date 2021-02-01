@@ -1,23 +1,249 @@
-*{
-    margin: 0;
-    padding: 0;
+main{
+    color: white;
 }
+
+form, article, h1{
+    margin-left: 7vw;
+}
+
 
 /****************************************************
                     Titre et Form
 ****************************************************/
+h1{
+    font-size       : 4vh;
+}
 
 form{
-    
+    display: flex;
+}
+
+.colone1{
+    margin-top      : 2vh;
+    border: none;
+}
+
+.colone2{
+    margin-top      : 2vh;
+    margin-left: 5vw;
+    border: none;
+}
+.colone3{
+    margin-top      : 13vh;
+    margin-left: 5vw;
+    border: none;
+}
+
+legend,input,label,select{
+    display         : block;
+}
+
+legend{
+    font-size       : 1.5vw;
+    margin-bottom   : 1.8vh;
+}
+
+/* Range AGE; Faire en sorte qu'il soit responsible*/
+
+.middle {
+	position: relative;
+	width: 100%;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 0.5vh;
+    margin-bottom: 3vh;
+    margin-right: 1vw;
+    margin-left: 0.7vw;
+}
+.slider > .track {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #484f58;
+}
+.slider > .range {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #484f58;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 1.7vw;
+	height: 3.2vh;
+	background-color: #484f58;
+	border-radius: 50%;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-0.5vw, -1.3vh);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(0.9vw, -1.3vh);
+}
+
+input[type="range"] {
+	position: absolute;
+	pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	z-index: 2;
+	height: 1vh;
+	width: 100%;
+	opacity: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+	pointer-events: all;
+	width: 1.7vw;
+	height: 3.2vh;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb{
+	pointer-events: all;
+	width: 1.7vw;
+	height: 3.2vh;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="range"]::-ms-thumb{
+	pointer-events: all;
+	width: 1.7vw;
+	height: 3.2vh;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Création des arrows */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance   : none;
+    -ms-appearance    : none;
+    appearance        : none;
+    outline           : 0;
+    box-shadow        : none;
+    border            : 0 !important;
+    background        : #484f58;
+    background-image  : none;
+}
+  
+/* Remove IE arrow */
+select::-ms-expand {
+    display      : none;
+}
+  
+/* Custom Select */
+.petitefleche {
+    margin-top   : 0;
+    position     : relative;
+    display      : flex;
+    width        : 28vw;
+    height       : 3vh;
+    background   : #484f58;
+    overflow     : hidden;
+    border-radius: 1.2vh;
+    margin-top   : 0.6vh;
+    margin-bottom: 2.5vh;
+}
+  
+select {
+    flex         : 1;
+    padding      : 0 0.5vw;
+    color        : #fff;
+    cursor       : pointer;
+}
+  
+/* Arrow */
+.petitefleche::after {
+    border-radius     : 1.2vh;
+    content           : "\25BC";
+    position          : absolute;
+    top               : 0;
+    right             : 0;
+    padding           : 0.4vw 0.6vw;
+    background        : #afb4b9;
+    cursor            : pointer;
+    pointer-events    : none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition     : 0.25s all ease;
+    transition        : 0.25s all ease;
+    color             : #484f58;
+    font-size         : 1vh;
+}
+
+.submit{
+    background-color: rgba(217, 169, 2, 1);
+    width: 9vw;
+  height: 4vh;
+  color: white;
+  border: none;
+  display: block;
+  font-size: 1.3vw;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset{
+    background-color: rgba(217, 169, 2, 1);
+    width: 9vw;
+  height: 4vh;
+  color: white;
+  border: none;
+  display: block;
+  font-size: 1.3vw;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 0.9em;
+  cursor: pointer;
 }
 
 /****************************************************
                         Article
 *****************************************************/
 
-article{
-    margin-right: 20vw;
-    width: 30vw;
-    height: 30vh;
+
+.article{
+    display: flex;
+    justify-content: space-around;
+}
+
+.graphique1{
+    width           : 41.5vw;
+    height          : 40vh;
     background-color: rgba(43, 61, 80, 1);
+    border-radius   : 10px;
+}
+
+.graphique2{
+    width           : 41.5vw;
+    height          : 40vh;
+    background-color: rgba(43, 61, 80, 1);
+    border-radius   : 10px;
 }

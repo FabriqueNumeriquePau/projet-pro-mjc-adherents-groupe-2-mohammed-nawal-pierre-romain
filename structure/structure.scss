@@ -151,7 +151,7 @@ main {
         overflow: hidden;
         transition: width 600ms ease;
         cursor: pointer;
-        z-index: 2;
+        z-index: 1000;
 
         &:hover {
             width: 20vw;
