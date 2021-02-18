@@ -9,6 +9,7 @@ body {
     left: 50%;
     width: 30%;
     height: 40%;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
     background-color: rgb(61, 58, 58);
     border-radius: 50px;
@@ -17,7 +18,7 @@ body {
     background: linear-gradient(145deg, #5d5858, #4e4a4a);
     box-shadow: 5px 5px 10px #232121,
         -10px -10px 15px #302e2e;
-    display: none;
+    // display: none;
 
     // apparition inscription 
 
@@ -40,10 +41,14 @@ body {
             justify-content: space-evenly;
             align-items: center;
 
-            label {
-                color: white;
-                font-size: 2.2em;
-                float: left;
+            p {
+                margin-right: .5em;
+
+                label {
+                    color: white;
+                    font-size: 3vh;
+
+                }
             }
 
 
@@ -317,10 +322,10 @@ body {
     border-radius: 12px;
     background: linear-gradient(145deg, #5d5858, #4e4a4a);
     box-shadow: 5px 5px 10px #232121,
-    -10px -10px 15px #302e2e;
-    // display: none;
+        -10px -10px 15px #302e2e;
+    display: none;
 
-    
+
     section {
         display: flex;
         flex-direction: column;
@@ -328,8 +333,8 @@ body {
         text-align: left;
         width: 40vw;
         height: 90vh;
-        
-        
+
+
         img {
             width: 8vw;
         }
@@ -367,15 +372,13 @@ body {
                         border: none;
 
                     }
-                    
-                    [type="checkbox"]{
+
+                    [type="checkbox"] {
                         width: 1.4vw;
                         height: 2vh;
-                        margin: 1vw;
-                        border: 2px solid rgb(233, 17, 17);
-                        background: rgb(145, 31, 31);
+                        margin: 0 1vw 0 1vw;
                         border-radius: .5em;
-                        transition: all .275s;
+
                     }
 
 
@@ -442,7 +445,8 @@ body {
             }
 
         }
-        #btn-inscrire{
+
+        #btn-inscrire {
             padding: 1vh;
 
             button {
